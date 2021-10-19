@@ -1500,7 +1500,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'belipremium':
        case 'buypremium':
        case 'sewabot':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*[ PRICE LIST ]*
 *Sewa Bot PSYCO BOT ON 24 Jam*
 *1 Hari :* 2K
@@ -1512,7 +1512,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break             
 //------------------< bayar menu >-------------------  
 case 'bayar':
-gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
 teksnya = `*[ PAYMENT ]*
 *Gopay :* 085643260438
 *Pulsa :* 085643260438
@@ -1522,7 +1522,7 @@ teksnya = `*[ PAYMENT ]*
               break
  
 case 'buttonstik':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「MENU STICKER」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
 © PINO MODZ
@@ -1542,7 +1542,7 @@ case 'buttonstik':
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
  case 'buttondl':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「DOWNLOAD MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
 © PINO MODZ
@@ -1564,7 +1564,7 @@ case 'buttonstik':
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'buttonpen':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「NULIS MENU」*
 *き⃟🦈 ${prefix}nulis*
 *Ketik ${prefix}owner, Untuk Request Fitur*
@@ -1572,7 +1572,7 @@ case 'buttonpen':
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'buttongame':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「GAME MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
 © PINO MODZ
@@ -1601,7 +1601,7 @@ case 'buttongame':
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'buttongc':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「GRUP MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
 © PINO MODZ
@@ -1633,7 +1633,7 @@ case 'buttongc':
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'buttonwibu':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「WIBU MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
 © PINO MODZ
@@ -1665,7 +1665,7 @@ case 'buttonwibu':
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftext, caption: teksnya })
               break
 case 'buttonown':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「OWNER MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
 © PINO MODZ
@@ -1693,7 +1693,7 @@ case 'buttonown':
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftext, caption: teksnya })
               break
 case 'pricegtivd':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*Price Role GTIVD*
 *Link Grup :* https://chat.whatsapp.com/I2yoiNRMkJD8rzOFtD2onA
 
@@ -1708,7 +1708,7 @@ Owner  : *3 Diamond Locks*
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'pricegtli':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `Welcome, Price Role GTLI*
 *Link Grup :* https://chat.whatsapp.com/GleykpNnZ5E2UVaYNFFbuX
 
@@ -1738,7 +1738,7 @@ C Role Unli : *600 World Locks*
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'pricegtfo':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*Price Role GTFO*
 *Link Grup :* https://chat.whatsapp.com/La6OatYLdAc5Op9nWvWduS
 
@@ -1754,7 +1754,7 @@ Owner  : *7 Diamond Locks*
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'ruleswave':
-              gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*_Welcome To WAVEㅤFMLY!_*
 *Rules* (Peraturan) :
 
@@ -4128,7 +4128,7 @@ case 'linkgc':
                break
         case 'info':
         case 'infobot':  // Jangan Di Ubah Plise
-               gopeynya = 'https://i.ibb.co/kynNYTh/ganteng.jpg'
+               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
                thankslort = `*[━━━━ INFO BOT ━━━━]*\n*➤ Nama : PSYCO BOT*\n*➤ Pukul : ${moment().utcOffset('+0700').format('HH:mm')}*\n*➤ Tanggal : ${moment.tz('Asia/Jakarta').format('DD/MM')}*\n*➤ Tipe : Node Js*\n*➤ Version : 3.3*\n*[━━━━━━━━━━━━━━━━━━]*`
              dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: thankslort })
              break
@@ -4201,9 +4201,24 @@ case 'caripesan':  //by ANU TEAM
               
 //-------------------< islam menu >--------------------
 
+case 'hadist':
+      if (args.length < 1) return reply(`Contoh: ${prefix + command} kitab|nomor\nExample : ${prefix + command} Bukhari|15`)
+      get_args = args.join(" ").split("|")
+      kitab = get_args[0]
+      nomor = get_args[1]
+      var hadist = await fetchJson('https://api-psycho.herokuapp.com/api/hadits?kitab=${kitab}&nomor=${nomor}&apikey=${setting.psyco}')
+      ini_result = hadist.result
+         ini_txt = `Name : ${ini_result.name}\n`
+         ini_txt += `Id : ${ini_result.id}\n`
+         ini_txt += `Available : ${ini_result.availabel}\n`
+         ini_txt += `Number : ${ini_result.contents.number}\n`
+         ini_txt += `Arab : ${ini_result.contents.arab}\n`
+         ini_txt += `Ind : ${ini_result.contents.id}`
+      reply(ini_txt)
+      break
 case 'kisahnabi':
-                if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
-                    query = args.join(" ")
+                if (args.length < 0) return reply(`Example: ${prefix + command} Muhammad`)
+                    query = args.join(" ").split("|")
                     get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/kisahnabi?nabi=${query}&apikey=${setting.psyco}`)
                     get_result = get_result.result
                     ini_txt = `Name : ${get_result.name}\n`
@@ -4260,7 +4275,7 @@ case 'alquran':
                     reply(ini_txt)
                     break
 case 'asmaulhusna':
-                    get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/muslim/asmaulhusna?apikey=${setting.psyco}`)
+                    get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/random/asmaulhusna?apikey=${setting.psyco}`)
                     get_result = get_result.result
                     ini_txt = `No : ${get_result.index}\n`
                     ini_txt += `Latin: ${get_result.latin}\n`
