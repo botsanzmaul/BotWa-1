@@ -4263,7 +4263,7 @@ case 'alquran':
                     reply(ini_txt)
                     break
 case 'asmaulhusna':
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/asmaulhusna?apikey=9dff22db324aa3e93a246025`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/asmaulhusna?apikey=${setting.lolkey}`)
                     get_result = get_result.result
                     ini_txt = `No : ${get_result.index}\n`
                     ini_txt += `Latin: ${get_result.latin}\n`
@@ -4535,10 +4535,6 @@ case 'quotesdilan':
       case 'funmenu':
              dha.sendMessage(from, funMenu(prefix), MessageType.text, {quoted: troli})
              break
-
-      case 'iklan':
-      dha.sendMessage(from, iklanBot(prefix), MessageType.text, {quoted: troli})
-break
 
 default:
 if (fs.existsSync(`./media/${from}.json`)) {
