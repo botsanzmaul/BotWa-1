@@ -4216,19 +4216,6 @@ case 'hadist':
          ini_txt += `Ind : ${ini_result.contents.id}`
       reply(ini_txt)
       break
-      break
-case 'kisahnabi':
-                if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
-                    query = args.join(" ")
-                    get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/kisahnabi?nabi=${query}&apikey=${setting.psyco}`)
-                    get_result = get_result.result
-                    ini_txt = `Name : ${get_result.name}\n`
-                    ini_txt += `Lahir : ${get_result.thn_kelahiran}\n`
-                    ini_txt += `Umur : ${get_result.age}\n`
-                    ini_txt += `Tempat : ${get_result.place}\n`
-                    ini_txt += `Story : \n${get_result.story}`
-                    reply(ini_txt)
-                    break
 case 'jadwalsholat':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Yogyakarta`)
                     daerah = args.join(" ")
@@ -4551,6 +4538,7 @@ case 'quotesdilan':
 
       case 'iklan':
       dha.sendMessage(from, iklanBot(prefix), MessageType.text, {quoted: troli})
+break
 
 default:
 if (fs.existsSync(`./media/${from}.json`)) {
