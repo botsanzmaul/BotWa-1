@@ -44,7 +44,7 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM')
 const Exif = require('./lib/exif');
 const exif = new Exif();
 
-const { downloadMenu, infoMenu, gameMenu, groupMenu, funMenu, wibuMenu, ownerMenu, stickerMenu, otherMenu, rulesBot, islamMenu, sertiMenu, ceritaMenu, iklanBot,makerMenu,dewasaMenu, toolsMenu} = require('./message/help.js')
+const { downloadMenu, infoMenu, gameMenu, groupMenu, funMenu, wibuMenu, ownerMenu, stickerMenu, otherMenu, rulesBot, islamMenu, sertiMenu, ceritaMenu, iklanBot, makerMenu,dewasaMenu, toolsMenu} = require('./message/help.js')
 const { getBuffer, getGroupAdmins, getRandom, runtime, sleep } = require('./lib/myfunc')
 const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetch')
 const { color, bgcolor } = require('./lib/color')
@@ -4219,7 +4219,7 @@ case 'hadist':
       break
 case 'kisahnabi':
                 if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
-                    query = args.join(" ").split("|")
+                    query = args.join(" ")
                     get_result = await fetchJson(`https://api.lolhuman.xyz/api/kisahnabi/${query}?apikey=9dff22db324aa3e93a246025`)
                     get_result = get_result.result
                     ini_txt = `Name : ${get_result.name}\n`
