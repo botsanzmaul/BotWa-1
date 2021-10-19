@@ -44,7 +44,7 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM')
 const Exif = require('./lib/exif');
 const exif = new Exif();
 
-const { downloadMenu, infoMenu, gameMenu, groupMenu, funMenu, wibuMenu, ownerMenu, stickerMenu, otherMenu, rulesBot, islamMenu, sertiMenu, ceritaMenu, makerMenu,dewasaMenu, toolsMenu} = require('./message/help.js')
+const { downloadMenu, infoMenu, gameMenu, groupMenu, funMenu, wibuMenu, ownerMenu, stickerMenu, otherMenu, rulesBot, islamMenu, sertiMenu, ceritaMenu, iklanBot,makerMenu,dewasaMenu, toolsMenu} = require('./message/help.js')
 const { getBuffer, getGroupAdmins, getRandom, runtime, sleep } = require('./lib/myfunc')
 const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetch')
 const { color, bgcolor } = require('./lib/color')
@@ -4202,12 +4202,12 @@ case 'caripesan':  //by ANU TEAM
 //-------------------< islam menu >--------------------
 
 case 'hadist':
-      if (args.length < 1) return reply(`Contoh: ${prefix + command} kitab|nomor\nExample : ${prefix + command} Bukhari|15`)
+      if (args.length < 1) return reply(`Usage: ${prefix + command} kitab|nomor\nExample : ${prefix + command} Bukhari|15`)
       get_args = args.join(" ").split("|")
       kitab = get_args[0]
       nomor = get_args[1]
       var hadist = await fetchJson('https://api-psycho.herokuapp.com/api/hadits?kitab=${kitab}&nomor=${nomor}&apikey=${setting.psyco}')
-      ini_result = hadist.result.result
+         ini_result = hadist.result
          ini_txt = `Name : ${ini_result.name}\n`
          ini_txt += `Id : ${ini_result.id}\n`
          ini_txt += `Available : ${ini_result.availabel}\n`
@@ -4216,10 +4216,11 @@ case 'hadist':
          ini_txt += `Ind : ${ini_result.contents.id}`
       reply(ini_txt)
       break
+      break
 case 'kisahnabi':
                 if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
                     query = args.join(" ").split("|")
-                    get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/kisahnabi?nabi=${query}&apikey=${setting.psyco}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/kisahnabi/${query}?apikey=9dff22db324aa3e93a246025`)
                     get_result = get_result.result
                     ini_txt = `Name : ${get_result.name}\n`
                     ini_txt += `Lahir : ${get_result.thn_kelahiran}\n`
@@ -4275,7 +4276,7 @@ case 'alquran':
                     reply(ini_txt)
                     break
 case 'asmaulhusna':
-                    get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/muslim/asmaulhusna?apikey=${setting.psyco}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/asmaulhusna?apikey=9dff22db324aa3e93a246025`)
                     get_result = get_result.result
                     ini_txt = `No : ${get_result.index}\n`
                     ini_txt += `Latin: ${get_result.latin}\n`
@@ -4547,6 +4548,9 @@ case 'quotesdilan':
       case 'funmenu':
              dha.sendMessage(from, funMenu(prefix), MessageType.text, {quoted: troli})
              break
+
+      case 'iklan':
+      dha.sendMessage(from, iklanBot(prefix), MessageType.text, {quoted: troli})
 
 default:
 if (fs.existsSync(`./media/${from}.json`)) {
