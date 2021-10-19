@@ -261,6 +261,7 @@ return `
 *────❲ISLAM MENU❳────*
   
 ▢ ${prefix}kisahnabi
+▢ ${prefix}hadist
 ▢ ${prefix}jadwalsholat
 ▢ ${prefix}alquran
 ▢ ${prefix}asmaulhusna
@@ -440,14 +441,15 @@ exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount,
 
 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧
 ❏ NAMA : *PSYCO BOTZ*
-❏ API : @6282288265627
+❏ API : @62856432604381
 ❏ OWNER : *PSYCO*
-❏ API : *@6282W87486762*
+❏ API : *@62856432604381*
 ❏ TOTAL HIT : *${cmhit.length}x HIT*
 ❏ AKTIF : *${runtime(process.uptime())}*
 ❏ BATERAI : *${baterai}%*
 ❏ PREIFIX : *『${prefix}』*
 ❏ TOTAL FITUR : 300+
+❏ RestApi : https://api-psycho.herokuapp.com
 
    ━━━━━ 𝗔𝗟𝗟 𝗠𝗘𝗡𝗨 ━━━━━
 
@@ -561,6 +563,7 @@ exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount,
 
 𝖲𝖤𝖱𝖳𝖨𝖥𝖨𝖪𝖠𝖳 𝖬𝖤𝖭𝖴
 *▢ ${prefix}sertitolol* _teks_
+*▢ ${prefix}sertiff* _teks_
 *▢ ${prefix}bucinserti* _teks_
 *▢ ${prefix}fuckboy* _teks_
 *▢ ${prefix}fuckgirl* _teks_
