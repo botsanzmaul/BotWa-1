@@ -4115,7 +4115,7 @@ case 'linkgc':
                break
         case 'd':
         case 'del':
-        case 'delete': // MR.CYSER
+        case 'delete':
                try {
                if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply chat bot')
                dha.deleteMessage(from, {id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true})
@@ -4207,7 +4207,7 @@ case 'hadist':
       kitab = get_args[0]
       nomor = get_args[1]
       var hadist = await fetchJson('https://api-psycho.herokuapp.com/api/hadits?kitab=${kitab}&nomor=${nomor}&apikey=${setting.psyco}')
-      ini_result = hadist.result
+      ini_result = hadist.result.result
          ini_txt = `Name : ${ini_result.name}\n`
          ini_txt += `Id : ${ini_result.id}\n`
          ini_txt += `Available : ${ini_result.availabel}\n`
@@ -4217,7 +4217,7 @@ case 'hadist':
       reply(ini_txt)
       break
 case 'kisahnabi':
-                if (args.length < 0) return reply(`Example: ${prefix + command} Muhammad`)
+                if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
                     query = args.join(" ").split("|")
                     get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/kisahnabi?nabi=${query}&apikey=${setting.psyco}`)
                     get_result = get_result.result
@@ -4275,7 +4275,7 @@ case 'alquran':
                     reply(ini_txt)
                     break
 case 'asmaulhusna':
-                    get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/random/asmaulhusna?apikey=${setting.psyco}`)
+                    get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/muslim/asmaulhusna?apikey=${setting.psyco}`)
                     get_result = get_result.result
                     ini_txt = `No : ${get_result.index}\n`
                     ini_txt += `Latin: ${get_result.latin}\n`
