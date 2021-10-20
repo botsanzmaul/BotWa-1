@@ -82,7 +82,7 @@ let setting = JSON.parse(fs.readFileSync('./setting.json'))
 owner = setting.owner
 gamewaktu = setting.gamewaktu
 petik = '```'
-fake = '© PsycoBot'//GANTI NAMA KAMU BEP
+fake = '© PsycoBOT'//GANTI NAMA KAMU BEP
 ban =[]
 
 // Database
@@ -244,7 +244,7 @@ module.exports = dha = async (dha, mek) => {
         const gcount = setting.gcount
         
         const listmsg = (from, title, desc, list) => { // ngeread nya pake rowsId, jadi command nya ga keliatan
-            let po = dha.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "Pilih Disini","footerText": "© PsycoBot","listType": "SINGLE_SELECT","sections": list}}, {})
+            let po = dha.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "Pilih Disini","footerText": "© PsycoBOT","listType": "SINGLE_SELECT","sections": list}}, {})
             return dha.relayWAMessage(po, {waitForAck: true})
         }
         
@@ -849,7 +849,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ➤ *Owner :* NIZAM STORE
 ➤ *Aktif :* ${runtime(process.uptime())}
 ➤ *Prefix :* 『> ${prefix} <』
-➤ *Prefix :* https://api-psycho.herokuapp.com
+➤ *RestApi :* https://api-psycho.herokuapp.com
 
 「 *LIST MENU* 」
 ➤ *#Ownermenu*
@@ -872,7 +872,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: '© PsycoBot7', imageMessage: imageMsg,
+               footerText: '© PsycoBOT', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -890,7 +890,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
                buttonsMessage = {
                contentText: `${rolegtli}`,
-               footerText: '© PsycoBot', imageMessage: imageMsg,
+               footerText: '© PsycoBOT', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -908,7 +908,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
                buttonsMessage = {
                contentText: `${rolegtivd}`,
-               footerText: '© PsycoBot', imageMessage: imageMsg,
+               footerText: '© PsycoBOT', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -943,7 +943,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
-               const yy = {title: '© PsycoBot ' + nombor++,
+               const yy = {title: '© PsycoBOT ' + nombor++,
                     rows: [
                        {
                         title: `${listmenuu[startnum++]}`,
@@ -967,14 +967,14 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                     rows: [
                        {
                         title: `${listmenuu[startnum++]}`,
-                        footerText: '© PsycoBot', imageMessage: imageMsg,
+                        footerText: '© PsycoBOT', imageMessage: imageMsg,
                         rowId: `${prefix}${x}`
                       }
                     ]
                    }
                         list.push(yy)
            }
-               listmsg(from, `${ucapanWaktu}`,   `© PsycoBot`, list)
+               listmsg(from, `${ucapanWaktu}`,   `© PsycoBOT`, list)
                break
 //------------------< Game >------------------- 
         case 'limitgame': 
@@ -1516,10 +1516,9 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 case 'bayar':
 gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
 teksnya = `*[ PAYMENT ]*
-*Gopay :* SCAN PP
-*Dana :* 085727492435
-*Ovo :* 085727492435
-*Linkaja :*085727492435
+*Gopay :* 085643260438
+*Pulsa :* 085643260438
+*Ovo :* 085643260438
 *[ © Creator Psyco BOTZ ]*`
         dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
@@ -1528,7 +1527,7 @@ case 'buttonstik':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「MENU STICKER」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PsycoBot
+© PsycoBOT
 
 *き⃟🦈 ${prefix}attp* _teks_
 *き⃟🦈 ${prefix}ttp* _teks_
@@ -1548,7 +1547,7 @@ case 'buttonstik':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「DOWNLOAD MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PsycoBot
+© PsycoBOT
 
 *き⃟🦈 ${prefix}fbdl*
 *き⃟🦈 ${prefix}igdl*
@@ -1571,14 +1570,14 @@ case 'buttonpen':
               teksnya = `*「NULIS MENU」*
 *き⃟🦈 ${prefix}nulis*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PsycoBot`
+© PsycoBOT`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'buttongame':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「GAME MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PsycoBot
+© PsycoBOT
 
 き⃟🦈 ${prefix}limitgame*
 *き⃟🦈 ${prefix}slot*
@@ -1607,7 +1606,7 @@ case 'buttongc':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「GRUP MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PsycoBot
+© PsycoBOT
 
 *き⃟🦈 ${prefix}groupsetting*
 *き⃟🦈 ${prefix}getbio* _reply_
@@ -1639,7 +1638,7 @@ case 'buttonwibu':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「WIBU MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PsycoBot
+© PsycoBOT
 
 *き⃟🦈 ${prefix}loli*
 *き⃟🦈 ${prefix}manga*
@@ -1671,7 +1670,7 @@ case 'buttonown':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「OWNER MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PsycoBot
+© PsycoBOT
 
 *き⃟🦈️ ${prefix}bc* _teks_
 *き⃟🦈 ${prefix}tobc* _audio_
@@ -3647,7 +3646,7 @@ case 'getvn':
              for (let _ of anu) {
 dha.sendMessage(_.jid, 
 			{"contentText": `*「 Siaran PSYCO BOT 」*\n© NIZAM STORE\n*Isi Pesan :* ${body.slice(4)}`,
-			"footerText": '© PsycoBot',
+			"footerText": '© PsycoBOT',
 			"buttons": [
 			{"buttonId": `${prefix}menu`,
 			"buttonText": {"displayText": "LIST MENU"
@@ -4456,13 +4455,13 @@ case 'quotesdilan':
 					break                            
 //------------------< Menunya Bang:v >-------------------
       case 'dana':
-             reply(`DANA : 085727492435\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
+             reply(`OVO : 085643260438\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break
            case 'gopay':
              reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Goopay :* Scan Pp\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
              break  
          case 'pulsa':
-             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Pulsa :* 085727492435\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
+             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Pulsa :* 085643260438\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
              break              
       case 'infoig':
              reply(`Follow Instagram Owner Ya : https://www.instagram.com/xnoob_ganz`)
