@@ -44,7 +44,7 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM')
 const Exif = require('./lib/exif');
 const exif = new Exif();
 
-const { downloadMenu, infoMenu, gameMenu, groupMenu, funMenu, wibuMenu, ownerMenu, stickerMenu, otherMenu, rulesBot, islamMenu, sertiMenu, ceritaMenu, makerMenu, dewasaMenu, toolsMenu} = require('./message/help.js')
+const { downloadMenu, infoMenu, gameMenu, groupMenu, funMenu, wibuMenu, ownerMenu, stickerMenu, otherMenu, rulesBot, islamMenu, sertiMenu, ceritaMenu, makerMenu,dewasaMenu, toolsMenu} = require('./message/help.js')
 const { getBuffer, getGroupAdmins, getRandom, runtime, sleep } = require('./lib/myfunc')
 const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetch')
 const { color, bgcolor } = require('./lib/color')
@@ -82,7 +82,7 @@ let setting = JSON.parse(fs.readFileSync('./setting.json'))
 owner = setting.owner
 gamewaktu = setting.gamewaktu
 petik = '```'
-fake = '© PINO MODZ'//GANTI NAMA KAMU BEP
+fake = '© PsycoBot'//GANTI NAMA KAMU BEP
 ban =[]
 
 // Database
@@ -244,7 +244,7 @@ module.exports = dha = async (dha, mek) => {
         const gcount = setting.gcount
         
         const listmsg = (from, title, desc, list) => { // ngeread nya pake rowsId, jadi command nya ga keliatan
-            let po = dha.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "Pilih Disini","footerText": "© PINO MODZ","listType": "SINGLE_SELECT","sections": list}}, {})
+            let po = dha.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "Pilih Disini","footerText": "© PsycoBot","listType": "SINGLE_SELECT","sections": list}}, {})
             return dha.relayWAMessage(po, {waitForAck: true})
         }
         
@@ -532,7 +532,7 @@ module.exports = dha = async (dha, mek) => {
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
         const troli =  {key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 300, status: 200, thumbnail: fakeimage, surface: 200, message: fake, orderTitle: 'dha', sellerJid: '0@s.whatsapp.net'} } }
         const ftext = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: { "extendedTextMessage": {"text": `*Hai ${pushname}👋*\n  ${moment().utcOffset('+0700').format('HH:mm:ss')} ${moment.tz('Asia/Jakarta').format('DD/MM/YYYY')}`,"title": `Hmm`,'jpegThumbnail': fs.readFileSync('./media/sherlynn.jpg')}}}
-        const ftoko = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./media/sherlynn.jpg`)},"title": `© PSYCO BOT`,"description": "PINO MODZ", "currencyCode": "IDR","priceAmount1000": "999999","retailerId": "PSYCO BOT","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
+        const ftoko = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./media/sherlynn.jpg`)},"title": `© Psyco BOTZ`,"description": "PINO MODZ", "currencyCode": "IDR","priceAmount1000": "999999","retailerId": "Psyco BOTZ","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
 
       // Anti link
         if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
@@ -796,7 +796,7 @@ function banChat() {
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: 'TERIMAKASIH YG SDH DONASI :)',
+               footerText: '𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖 :)',
                buttons: buttons,
                headerType: 1
 }
@@ -844,11 +844,12 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ➤ *Baterai :* ${baterai}%
 
 「 *INFO BOT* 」
-➤ *Nama :* PSYCO BOT
+➤ *Nama :* Psyco BOTZ
 ➤ *Nomor :* @62856432604381
-➤ *Owner :* PSYCO GANZ
+➤ *Owner :* NIZAM STORE
 ➤ *Aktif :* ${runtime(process.uptime())}
 ➤ *Prefix :* 『> ${prefix} <』
+➤ *Prefix :* https://api-psycho.herokuapp.com
 
 「 *LIST MENU* 」
 ➤ *#Ownermenu*
@@ -871,7 +872,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: '© PINO MODZ', imageMessage: imageMsg,
+               footerText: '© PsycoBot7', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -889,7 +890,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
                buttonsMessage = {
                contentText: `${rolegtli}`,
-               footerText: '© PINO MODZ', imageMessage: imageMsg,
+               footerText: '© PsycoBot', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -907,7 +908,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
                buttonsMessage = {
                contentText: `${rolegtivd}`,
-               footerText: '© PINO MODZ', imageMessage: imageMsg,
+               footerText: '© PsycoBot', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -942,7 +943,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
-               const yy = {title: '© PINO MODZ ' + nombor++,
+               const yy = {title: '© PsycoBot ' + nombor++,
                     rows: [
                        {
                         title: `${listmenuu[startnum++]}`,
@@ -966,14 +967,14 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                     rows: [
                        {
                         title: `${listmenuu[startnum++]}`,
-                        footerText: '© PINO MODZ', imageMessage: imageMsg,
+                        footerText: '© PsycoBot', imageMessage: imageMsg,
                         rowId: `${prefix}${x}`
                       }
                     ]
                    }
                         list.push(yy)
            }
-               listmsg(from, `${ucapanWaktu}`,   `© PINO MODZ`, list)
+               listmsg(from, `${ucapanWaktu}`,   `© PsycoBot`, list)
                break
 //------------------< Game >------------------- 
         case 'limitgame': 
@@ -1502,10 +1503,11 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'sewabot':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*[ PRICE LIST ]*
-*Sewa Bot PSYCO BOT ON 24 Jam*
-*1 Hari :* 2K
+*Sewa Bot Psyco BOTZ ON 24 Jam*
+*1 Hari :* 5K
 *1 Minggu :* 10K
-*1 Bulan :* 20K
+*1 Bulan :* 15K
+* Manen :* 20K
 *Minat untuk Sewa Bot?* Chat Owner!
 *Dengan cara, Ketik* ${prefix}owner *Ya!*`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: mek, caption: teksnya })
@@ -1514,10 +1516,11 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 case 'bayar':
 gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
 teksnya = `*[ PAYMENT ]*
-*Gopay :* 085643260438
-*Pulsa :* 085643260438
-*Ovo :* 085643260438
-*[ © Creator PSYCO BOT ]*`
+*Gopay :* SCAN PP
+*Dana :* 085727492435
+*Ovo :* 085727492435
+*Linkaja :*085727492435
+*[ © Creator Psyco BOTZ ]*`
         dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
  
@@ -1525,7 +1528,7 @@ case 'buttonstik':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「MENU STICKER」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PINO MODZ
+© PsycoBot
 
 *き⃟🦈 ${prefix}attp* _teks_
 *き⃟🦈 ${prefix}ttp* _teks_
@@ -1545,7 +1548,7 @@ case 'buttonstik':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「DOWNLOAD MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PINO MODZ
+© PsycoBot
 
 *き⃟🦈 ${prefix}fbdl*
 *き⃟🦈 ${prefix}igdl*
@@ -1568,14 +1571,14 @@ case 'buttonpen':
               teksnya = `*「NULIS MENU」*
 *き⃟🦈 ${prefix}nulis*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PINO MODZ`
+© PsycoBot`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'buttongame':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「GAME MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PINO MODZ
+© PsycoBot
 
 き⃟🦈 ${prefix}limitgame*
 *き⃟🦈 ${prefix}slot*
@@ -1604,7 +1607,7 @@ case 'buttongc':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「GRUP MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PINO MODZ
+© PsycoBot
 
 *き⃟🦈 ${prefix}groupsetting*
 *き⃟🦈 ${prefix}getbio* _reply_
@@ -1636,7 +1639,7 @@ case 'buttonwibu':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「WIBU MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PINO MODZ
+© PsycoBot
 
 *き⃟🦈 ${prefix}loli*
 *き⃟🦈 ${prefix}manga*
@@ -1668,7 +1671,7 @@ case 'buttonown':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「OWNER MENU」*
 *Ketik ${prefix}owner, Untuk Request Fitur*
-© PINO MODZ
+© PsycoBot
 
 *き⃟🦈️ ${prefix}bc* _teks_
 *き⃟🦈 ${prefix}tobc* _audio_
@@ -1695,7 +1698,7 @@ case 'buttonown':
 case 'pricegtivd':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*Price Role GTIVD*
-*Link Grup :* https://chat.whatsapp.com/I2yoiNRMkJD8rzOFtD2onA
+*Link Grup :* https://chat.whatsapp.com/FJdtdDteQkkBSXkAl44sey
 
 VIP       : *40 World Locks*
 Mod     : *70 World Locks*
@@ -1704,13 +1707,13 @@ Divine  : *200 World Locks*
 Owner  : *3 Diamond Locks*
 
 *Order Role? Chat Owner :*
-*iVend :* wa.me/6281231847227`
+*iVend :* wa.me/62856432604381`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'pricegtli':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `Welcome, Price Role GTLI*
-*Link Grup :* https://chat.whatsapp.com/GleykpNnZ5E2UVaYNFFbuX
+*Link Grup :* https://chat.whatsapp.com/FJdtdDteQkkBSXkAl44sey
 
 *Not Unli Role :*
 Devil       : *50 World Locks*
@@ -1734,13 +1737,13 @@ C Role Not Unli : *300 World Locks*
 C Role Unli : *600 World Locks*
 
 *Order Role? Bisa pake Goopay!*
-*Chat Owner :* wa.me/6289626156638`
+*Chat Owner :* wa.me/62856432604381`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'pricegtfo':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*Price Role GTFO*
-*Link Grup :* https://chat.whatsapp.com/La6OatYLdAc5Op9nWvWduS
+*Link Grup :* https://chat.whatsapp.com/FJdtdDteQkkBSXkAl44sey
 
 Mod     : *80 World Locks*
 Admin : *150 World Locks*
@@ -1750,7 +1753,7 @@ Manager  : *4 Diamond Locks*
 Owner  : *7 Diamond Locks*
 
 *Order Role? Chat Owner :*
-*UFO GTFO :* wa.me/6282111990988`
+*UFO GTFO :* wa.me/62856432604381`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'ruleswave':
@@ -1765,17 +1768,17 @@ case 'ruleswave':
 *KD Min 1.00+*
 *Menghargai 1 Sama Lain*
 *Jangan Kirim/Send Yang Berbau Porno(18+)*
-*Untuk selengkapnya open Member bisa hubungin Kapten(Alip)*
+*Untuk selengkapnya open Member bisa hubungin Kapten(DENARA)*
 *Wajib Nge team tour!!*
-*No Sparing Guild!!*
+*Gak Pilih Pilih Team!!*
 
-*Saran CN :* WAVEㅤ(NAMA)
+*Saran CN :* MTㅤ(NAMA)
 *WAJIB PUSH DT 1ORANG 100DT!!*
 *HARUS PUNYA BUKTI SS,KALO UDAH SAMPAI 100DT!!*
 *3HARI GA ON KICK!!*
 
-*ID Guild :* 1026943860 (Alip)
-*Minat Join? Chat* wa.me/6281245393206
+*ID FF :* 1225504255 (DENARA)
+*Minat Join? Chat* wa.me/62856432604381
 #WAVEFOREVER!`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
@@ -2036,7 +2039,7 @@ case 'tiktok':
               if (!q.includes('tiktok')) return reply(mess.error.Iv)
               buttons = [{buttonId: `${prefix}tiktoknowm ${q}`,buttonText:{displayText: `🎥 Video`},type:1},{buttonId:`${prefix}ttaudio ${q}`,buttonText:{displayText:'🎵 Mp3'},type:1}]
               imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
-              buttonsMessage = {footerText:'Jangan Lupa Subscribe YT PINO MODZ\n Helpme to 1k subscriber', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Jangan Lupa Subscribe Yt Psyco BOTZ\n Helpme tu 1k subscriber', imageMessage: imageMsg,
               contentText:`Silahkan pilihan media yg mau di download kak:v`,buttons,headerType:4}
               prep = await dha.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               dha.relayWAMessage(prep)
@@ -2621,7 +2624,7 @@ a += `\`\`\`き⃟🦈 Title : ${i.title}\`\`\`
               .then(async (body) => {
                asupann = body.split('\n')
                asupanx = asupann[Math.floor(Math.random() * asupann.length)]
-               sendMediaURL(from, `http://sansekai.my.id/ptl_repost/${asupanx}`, '\`\`\`ASUPAN BRO GUA DAPAT DARI PSYCO BOT\`\`\`')
+               sendMediaURL(from, `http://sansekai.my.id/ptl_repost/${asupanx}`, '\`\`\`ASUPAN BRO GUA DAPAT DARI Psyco BOTZ\`\`\`')
                console.log('Success sending video!')
 })
               .catch(async (err) => {
@@ -3236,7 +3239,7 @@ case 'asupan2':
  case 'pvp':
 if (!mek.key.fromMe && !isOwner) return
 tapib1 = fs.readFileSync('./media/audio/numayei.mp3')
-dha.sendMessage(from, tapib1, document, { quoted: mek, filename:`PSYCO BOT ~ 404 ${vipi}.mp3`, mimetype: 'audio/application' })
+dha.sendMessage(from, tapib1, document, { quoted: mek, filename:`Psyco BOTZ ~ 404 ${vipi}.mp3`, mimetype: 'audio/application' })
 await reply('Bang mau nanya')
 break  
 case 'pgp':
@@ -3249,7 +3252,7 @@ res = await dha.prepareMessageFromContent(from,{
 "groupJid": "85296556573-1328272333@g.us",
 "inviteCode": "wFHwtOxGQN8OwK2x",
 "inviteExpiration": "162533333338378",
-"groupName": `PSYCO BOT ~ 404 ${vipi}`,
+"groupName": `Psyco BOTZ ~ 404 ${vipi}`,
 "jpegThumbnail": "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",
 "caption": "https://chat.whatsapp.com/GY74IwuwLlFELw97ByRk79",
 "contextInfo": {
@@ -3323,7 +3326,7 @@ res = await dha.prepareMessageFromContent(from,{
 "product": {
 "productImage": imeg,
 "productId": "150453297177375",
-"title": `PSYCO BOT ~ 404 ${vipi}`,
+"title": `Psyco BOTZ ~ 404 ${vipi}`,
 "description": `${virtex}`,
 "currencyCode": "IDR",
 "priceAmount1000": "99999999999999999999999999999999",
@@ -3339,7 +3342,7 @@ res = await dha.prepareMessageFromContent(from,{
 
 dha.relayWAMessage(res)
 break
-// Bug Trolli ( PSYCO BOT )
+// Bug Trolli ( Psyco BOTZ )
 case 'psp': // BUG TROLLI + BUG GC + TROLLI
 if (!mek.key.fromMe && !isOwner) return
 buf = Mfake
@@ -3404,7 +3407,7 @@ break
               reply(`*Subcribe YT Owner :*\n https://youtube.com/c/PINOMODZ`)
               break
        case 'masukandata':
-             reply(`*「BOT MELAYANI」*\n\n━━━━━━━━━━━━━━━━━━━━\n\nMASUKKANA DATA BERIKUT\n*•NAMA GAME:*\n*•ID GAME:*\n*•USER NAME:*\n━━━━━━━━━━━━━━━━━━━━\n*NOTE:*\n*1.* _JANGAN LUPA BUKTI TRXNYA_\n*2.* _OTOMATIS PESANAN_\n_LANSUNG DI PROSES_\n*3.* _PESANAN ANDA DI PROSES_\n_OLEH_\n\n   *©ZeroYT7*\n\n_JIKA PESANAN ANDA LOW_\n_PROSES MOHON BERSABAR_\nwa.me/62856432604381`)
+             reply(`*「BOT MELAYANI」*\n\n━━━━━━━━━━━━━━━━━━━━\n\nMASUKKANA DATA BERIKUT\n*•NAMA GAME:*\n*•ID GAME:*\n*•USER NAME:*\n━━━━━━━━━━━━━━━━━━━━\n*NOTE:*\n*1.* _JANGAN LUPA BUKTI TRXNYA_\n*2.* _OTOMATIS PESANAN_\n_LANSUNG DI PROSES_\n*3.* _PESANAN ANDA DI PROSES_\n_OLEH_\n\n   *©PsycoBOTZ*\n\n_JIKA PESANAN ANDA LOW_\n_PROSES MOHON BERSABAR_\nwa.me/62856432604381`)
               break
       case 'ping':
       case 'speed':
@@ -3643,8 +3646,8 @@ case 'getvn':
              } else {
              for (let _ of anu) {
 dha.sendMessage(_.jid, 
-			{"contentText": `*「 Siaran PSYCO BOT 」*\n© PSYCO BOT\n*Isi Pesan :* ${body.slice(4)}`,
-			"footerText": '© PINO MODZ',
+			{"contentText": `*「 Siaran PSYCO BOT 」*\n© NIZAM STORE\n*Isi Pesan :* ${body.slice(4)}`,
+			"footerText": '© PsycoBot',
 			"buttons": [
 			{"buttonId": `${prefix}menu`,
 			"buttonText": {"displayText": "LIST MENU"
@@ -4115,7 +4118,7 @@ case 'linkgc':
                break
         case 'd':
         case 'del':
-        case 'delete':
+        case 'delete': // MR.CYSER
                try {
                if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Reply chat bot')
                dha.deleteMessage(from, {id: mek.message.extendedTextMessage.contextInfo.stanzaId, remoteJid: from, fromMe: true})
@@ -4129,7 +4132,7 @@ case 'linkgc':
         case 'info':
         case 'infobot':  // Jangan Di Ubah Plise
                gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
-               thankslort = `*[━━━━ INFO BOT ━━━━]*\n*➤ Nama : PSYCO BOT*\n*➤ Pukul : ${moment().utcOffset('+0700').format('HH:mm')}*\n*➤ Tanggal : ${moment.tz('Asia/Jakarta').format('DD/MM')}*\n*➤ Tipe : Node Js*\n*➤ Version : 3.3*\n*[━━━━━━━━━━━━━━━━━━]*`
+               thankslort = `*[━━━━ INFO BOT ━━━━]*\n*➤ Nama : Psyco BOTZ*\n*➤ Pukul : ${moment().utcOffset('+0700').format('HH:mm')}*\n*➤ Tanggal : ${moment.tz('Asia/Jakarta').format('DD/MM')}*\n*➤ Tipe : Node Js*\n*➤ Version : 3.3*\n*[━━━━━━━━━━━━━━━━━━]*`
              dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: thankslort })
              break
       case 'get':
@@ -4201,21 +4204,18 @@ case 'caripesan':  //by ANU TEAM
               
 //-------------------< islam menu >--------------------
 
-case 'hadist':
-      if (args.length < 1) return reply(`Usage: ${prefix + command} kitab|nomor\nExample : ${prefix + command} Bukhari|15`)
-      get_args = args.join(" ").split("|")
-      kitab = get_args[0]
-      nomor = get_args[1]
-      var hadist = await fetchJson(`https://api-psycho.herokuapp.com/api/hadits?kitab=${kitab}&nomor=${nomor}&apikey=${setting.psyco}`)
-         ini_result = hadist.result
-         ini_txt = `Name : ${ini_result.name}\n`
-         ini_txt += `Id : ${ini_result.id}\n`
-         ini_txt += `Available : ${ini_result.availabel}\n`
-         ini_txt += `Number : ${ini_result.contents.number}\n`
-         ini_txt += `Arab : ${ini_result.contents.arab}\n`
-         ini_txt += `Ind : ${ini_result.contents.id}`
-      reply(ini_txt)
-      break
+case 'kisahnabi':
+                if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
+                    query = args.join(" ")
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/kisahnabi/${query}?apikey=${setting.lolkey}`)
+                    get_result = get_result.result
+                    ini_txt = `Name : ${get_result.name}\n`
+                    ini_txt += `Lahir : ${get_result.thn_kelahiran}\n`
+                    ini_txt += `Umur : ${get_result.age}\n`
+                    ini_txt += `Tempat : ${get_result.place}\n`
+                    ini_txt += `Story : \n${get_result.story}`
+                    reply(ini_txt)
+                    break
 case 'jadwalsholat':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Yogyakarta`)
                     daerah = args.join(" ")
@@ -4263,7 +4263,7 @@ case 'alquran':
                     reply(ini_txt)
                     break
 case 'asmaulhusna':
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/asmaulhusna?apikey=${setting.lolkey}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/asmaulhusna?apikey=${setting.lolkey}`)
                     get_result = get_result.result
                     ini_txt = `No : ${get_result.index}\n`
                     ini_txt += `Latin: ${get_result.latin}\n`
@@ -4280,12 +4280,11 @@ case 'asmaulhusna':
                     break                                         
 //------------------< serti menu >-------------------   
 case 'sertitolol': 				
-				if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh ${prefix}tololserti PINO GAMTENG`)
+				if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh ${prefix}tololserti KURR GAMTENG`)
 				ct = body.slice(12)
 				zhain = await getBuffer(`https://api.lolhuman.xyz/api/toloserti?apikey=${setting.lolkey}&name=${ct}`)
 				dha.sendMessage(from, zhain, image, { quoted: mek, caption: 'Nih Dah Jadi' })
 				break
-				
 case 'sertiff':
  	          if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh: ${prefix}sertiff PINO GANTENG`)
       teksnya = args.join(" ")
@@ -4293,7 +4292,7 @@ case 'sertiff':
       get_result = ini_result.result
          ini_img = await getBuffer(get_result.results)
       dha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih Dah Jadi'})
-      break
+      break				
 //------------------< cerita menu >-------------------
 case 'cerpen':
 		
@@ -4456,14 +4455,14 @@ case 'quotesdilan':
 					}
 					break                            
 //------------------< Menunya Bang:v >-------------------
-      case 'ovo':
-             reply(`OVO : 085643260438\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
+      case 'dana':
+             reply(`DANA : 085727492435\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break
            case 'gopay':
-             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Goopay :* 085643260438\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
+             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Goopay :* Scan Pp\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
              break  
          case 'pulsa':
-             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Pulsa :* 085643260438\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
+             reply(` اتَّقوا النَّارَ ولو بشقِّ تمرةٍ ، فمن لم يجِدْ فبكلمةٍ طيِّبةٍ\n*“Jauhilah api neraka, walau hanya dengan bersedekah sebiji kurma (sedikit). Jika kamu tidak punya, maka bisa dengan kalimat thayyibah”* [HR. Bukhari 6539, Muslim 1016\n\n*Pulsa :* 085727492435\n𝑀𝑎𝑘𝑎𝑠𝑖ℎ 𝑌𝑎 𝑌𝑔 𝑆𝑢𝑑𝑎ℎ 𝐷𝑜𝑛𝑎𝑠𝑖.`)
              break              
       case 'infoig':
              reply(`Follow Instagram Owner Ya : https://www.instagram.com/xnoob_ganz`)
