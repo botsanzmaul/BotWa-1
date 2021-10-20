@@ -16,17 +16,17 @@ nocache('../message/group.js', module => console.log(color('[WATCH]', 'yellow'),
 
 const starts = async (dha = new WAConnection()) => {
 	dha.logger.level = 'warn'
-	console.log(color(figlet.textSync('PSYCO', {
+	console.log(color(figlet.textSync('PSYCO BOT', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
 		width: 80,
 		whitespaceBreak: false
 	}), 'cyan'))
-	console.log(color('[ SOURCE CODE INI DI RECODE OLEH HRUTZOFFC\nDENGAN AUTHOR PSYCO ]\n\n', 'orange'), color('\n======TERIMAKASIH BANYAK KEPADA======\n•MHANKBARBAR\n•HRUTZOFFC\n•KURRXD\n•NINO\n•IKYADS\n•KurrXd\n•DAPPAUHUY\n•DAN CREATOR BOT LAINNYA', 'yellow'))
-	console.log(color('\n\nSARAN JANGAN DI JUAL ULANG BRO\nKALAU ADA YG MINTA SURUH CHAT SAYA\nWA ZERO YT7 6285157740529', 'pink'))
+	console.log(color('[ SOURCE CODE INI DI RECODE OLEH NIZAM\nDENGAN AUTHOR PINO MODZ ]\n\n', 'orange'), color('\n======TERIMAKASIH BANYAK KEPADA======\n•MHANKBARBAR\n•HRUTZOFFC\n•KURRXD\n•NINO\n•IKYADS\n•KurrXd\n•PSYCO BOT\n•DAPPAUHUY\n•DAN CREATOR BOT LAINNYA', 'yellow'))
+	console.log(color('\n\nSARAN JANGAN DI JUAL ULANG BRO\nKALAU ADA YG MINTA SURUH CHAT SAYA\nWA PSYCO BOT 6285643260438', 'pink'))
 	console.log(color('\n\n[ SAYA DOAKAN YANG SUBSCRIBE LANCAR, ANTI ERROR PAS RECODE DAN YG TIDAK, YA TAU LAH AKIBAT NYA', 'red'))
-	dha.browserDescription = ["SHERLYNN BOTZ", "Chrome", "3.0.0"];
+	dha.browserDescription = ["PSYCO BOT", "Chrome", "3.0.0"];
 
 	// Menunggu QR
 	dha.on('qr', () => {
@@ -36,55 +36,55 @@ const starts = async (dha = new WAConnection()) => {
 	// Menghubungkan
 	fs.existsSync(`./${setting.sessionName}.json`) && dha.loadAuthInfo(`./${setting.sessionName}.json`)
 	dha.on('connecting', () => {
-		console.log(color('[ PSYCO ]', 'yellow'), color('PROSES NYAMBUNG...'));
+		console.log(color('[ PSYCO BOT ]', 'yellow'), color('PROSES NYAMBUNG...'));
 	})
 const spinner = { 
   "interval": 120,
   "frames": [
-    "K",
-    "Ku",
-    "Kur",
-    "Kurr",
-    "KurrXd",
-    "KurrXd G",
-    "KurrXd GA",
-    "KurrXd GAN",
-    "KurrXd GANT",
-    "KurrXd GANTE",
-    "KurrXd GANTEN",
-    "KurrXd GANTENG",
-    "KurrXd GANTENG B",
-    "KurrXd GANTENG BA",
-    "KurrXd GANTENG BAN",
-    "KurrXd GANTENG BANG",
-    "KurrXd GANTENG BANGE",
-    "KurrXd GANTENG BANGET",
-    "KurrXd GANTENG BANGET A",
-    "KurrXd GANTENG BANGET AN",
-    "KurrXd GANTENG BANGET ANJ",
-    "KurrXd GANTENG BANGET ANJI",
-    "KurrXd GANTENG BANGET ANJIR",
-    "KurrXd GANTENG BANGET ANJIR, B",
-    "KurrXd GANTENG BANGET ANJIR, BT",
-    "KurrXd GANTENG BANGET ANJIR, BTW",
-    "KurrXd GANTENG BANGET ANJIR, BTW J",
-    "KurrXd GANTENG BANGET ANJIR, BTW JA",
-    "KurrXd GANTENG BANGET ANJIR, BTW JAN",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANG",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGA",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN J",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JU",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JUA",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JUAL",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JUAL S",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JUAL SC",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JUAL SC I",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JUAL SC IN",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JUAL SC INI",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JUAL SC INI C",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JUAL SC INI CO",
-    "KurrXd GANTENG BANGET ANJIR, BTW JANGAN JUAL SC INI COK"
+    "P",
+    "Psy",
+    "Psyc",
+    "Psych",
+    "Psycho",
+    "Psycho G",
+    "Psycho GA",
+    "Psycho GAN",
+    "Psycho GANT",
+    "Psycho GANTE",
+    "Psycho GANTEN",
+    "Psycho GANTENG",
+    "S",
+    "SU",
+    "SUK",
+    "SUKS",
+    "SUKSE",
+    "SUKSES",
+    "SUKSES T",
+    "SUKSES TE",
+    "SUKSES TER",
+    "SUKSES TERHU",
+    "SUKSES TERHUB",
+    "SUKSES TERHUBU",
+    "SUKSES TERHUBUN",
+    "SUKSES TERHUBUNG",
+    "SUKSES TERHUBUNG K",
+    "SUKSES TERHUBUNG KE",
+    "SUKSES TERHUBUNG KE S",
+    "SUKSES TERHUBUNG KE SE",
+    "SUKSES TERHUBUNG KE SER",
+    "SUKSES TERHUBUNG KE SERV",
+    "SUKSES TERHUBUNG KE SERVE",
+    "SUKSES TERHUBUNG KE SERVER",
+    "SUKSES TERHUBUNG KE SERVER P",
+    "SUKSES TERHUBUNG KE SERVER PS",
+    "SUKSES TERHUBUNG KE SERVER PSY",
+    "SUKSES TERHUBUNG KE SERVER PSYC",
+    "SUKSES TERHUBUNG KE SERVER PSYCH",
+    "SUKSES TERHUBUNG KE SERVER PSYCHO",
+    "SUKSES TERHUBUNG KE SERVER PSYCHO B",
+    "SUKSES TERHUBUNG KE SERVER PSYCHO BO",
+    "SUKSES TERHUBUNG KE SERVER PSYCHO BOT",
+    "SUKSES TERHUBUNG KE SERVER PSYCHO BOTZ"
   ]}
 
 	//connect
