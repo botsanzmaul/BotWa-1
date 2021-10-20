@@ -274,7 +274,7 @@ return `
   
 ▢ ${prefix}sertitolol
 ▢ ${prefix}sertiff
-▢ ${prefix}bucinserti▢
+▢ ${prefix}bucinserti
 ▢ ${prefix}fuckboy
 ▢ ${prefix}fuckgirl
 ▢ ${prefix}badboy
