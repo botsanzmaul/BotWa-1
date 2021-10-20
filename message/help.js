@@ -222,15 +222,15 @@ KELEBIHAN BOTZ
 ▢ BOT NO PASARAN
 
 LIST HARGA SEWA BOTZ
-▢ PERHARI 2K
-▢ PERMINGGU 5K
+▢ PERHARI 5K
+▢ PERMINGGU 10K
 ▢ PERBULAN 15K
-▢ PERMANEN 40K
+▢ PERMANEN 20K
 MINAT HIBUNGI OWNER
 wa.me/62856432604381
 
-YG MAU SEWA BOT MARI JOIN
-https://chat.whatsapp.com/FJdtdDteQkkBSXkAl44sey`
+YG MAU TOP UP GAME CHAT NO DI BAWAH
+wa.me/62856432604381`
 }
 exports.infoMenu = (prefix) => {
 return `
@@ -261,7 +261,6 @@ return `
 *────❲ISLAM MENU❳────*
   
 ▢ ${prefix}kisahnabi
-▢ ${prefix}hadist
 ▢ ${prefix}jadwalsholat
 ▢ ${prefix}alquran
 ▢ ${prefix}asmaulhusna
@@ -275,7 +274,7 @@ return `
   
 ▢ ${prefix}sertitolol
 ▢ ${prefix}sertiff
-▢ ${prefix}bucinserti
+▢ ${prefix}bucinserti▢
 ▢ ${prefix}fuckboy
 ▢ ${prefix}fuckgirl
 ▢ ${prefix}badboy
@@ -306,7 +305,6 @@ return`
 *────❲MAKER MENU❳────*
 
 ▢ ${prefix}tahta
-▢ ${prefix}
 ▢ ${prefix}cup
 ▢ ${prefix}cup1
 ▢ ${prefix}coffe
@@ -431,7 +429,7 @@ return`
 
 `}
 exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount, sender, baterai) => {
-    return `━━━━━『PSYCO BOTZ』━━━━━
+    return `━━━━━『𝔇𝔢𝔫𝔞𝔯𝔞 𝔅𝔬𝔱𝔰』━━━━━
 
 𝗜𝗡𝗙𝗢 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔 𝗕𝗢𝗧
 ❏ NAMA : *${pushname}*
@@ -440,16 +438,15 @@ exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount,
 ❏ LIMIT : *${isPremium ? 'Unlimited' : `${gcount}`}*
 
 𝗜𝗡𝗙𝗢 𝗕𝗢𝗧
-❏ NAMA : *PSYCO BOTZ*
+❏ NAMA : *PSYCO BOT*
 ❏ API : @62856432604381
-❏ OWNER : *PSYCO*
+❏ OWNER : *NIZAM STORE*
 ❏ API : *@62856432604381*
 ❏ TOTAL HIT : *${cmhit.length}x HIT*
 ❏ AKTIF : *${runtime(process.uptime())}*
 ❏ BATERAI : *${baterai}%*
 ❏ PREIFIX : *『${prefix}』*
 ❏ TOTAL FITUR : 300+
-❏ RestApi : https://api-psycho.herokuapp.com
 
    ━━━━━ 𝗔𝗟𝗟 𝗠𝗘𝗡𝗨 ━━━━━
 
@@ -563,7 +560,6 @@ exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount,
 
 𝖲𝖤𝖱𝖳𝖨𝖥𝖨𝖪𝖠𝖳 𝖬𝖤𝖭𝖴
 *▢ ${prefix}sertitolol* _teks_
-*▢ ${prefix}sertiff* _teks_
 *▢ ${prefix}bucinserti* _teks_
 *▢ ${prefix}fuckboy* _teks_
 *▢ ${prefix}fuckgirl* _teks_
@@ -830,4 +826,4 @@ exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount,
 *▢ ${prefix}memeindo*
 *▢ ${prefix}darkjoke*
 
-©PSYCO BOTZ`}
+©psycobotz`}
