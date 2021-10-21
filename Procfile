@@ -1,1 +1,1 @@
-worker: npm i && npm i webpmux && npm start
+worker: npm start
