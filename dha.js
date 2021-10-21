@@ -4454,7 +4454,7 @@ case 'quotesdilan':
 					}
 					break                            
 //------------------< Menunya Bang:v >-------------------
-      case 'dana':
+      case 'ovo':
              reply(`OVO : 085643260438\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break
            case 'gopay':
