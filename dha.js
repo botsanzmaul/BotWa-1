@@ -4302,7 +4302,7 @@ case 'cerpen':
                     ini_txt += `Story :\n${get_result.cerpen}`
                     reply(ini_txt)
                     break
-case 'ceritahoror':
+case 'horor':
                     get_result = await fetchJson(`http://api.lolhuman.xyz/api/ceritahoror?apikey=${setting.lolkey}`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
