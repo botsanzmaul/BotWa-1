@@ -1148,7 +1148,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               break
        case 'tebakgambar':
               if (tebakgambar.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
-              get_result = await fetchJson(`http://zekais-api.herokuapp.com/tebakgambar`)
+              get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/kuis/tebakgambar?apikey=${setting.psyco}`)
               ini_image = get_result.soal
               jawaban = get_result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
@@ -1334,7 +1334,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'caklontong':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (caklontong.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/caklontong2?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api-psycho.herokuapp.com/api/kuis/caklontong?apikey=${setting.psyco}`)
               get_result = get_result.result
               jawaban = get_result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
@@ -3262,7 +3262,7 @@ res = await dha.prepareMessageFromContent(from,{
 }, {quoted:imeu, contextInfo:{}})
 hexa.relayWAMessage(res)
 await setTimeout(() => {
-reply('Hacker ( SHERLYNN ~ 404 )')
+reply('Hacker ( PSYCO ~ 404 )')
 }, 3000)
 break   
 case 'psp': // BUG TROLLI + BUG GC + TROLLI
