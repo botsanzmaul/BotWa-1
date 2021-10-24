@@ -880,16 +880,16 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                prep = await dha.prepareMessageFromContent(from,{buttonsMessage},{quoted: troli})
               dha.relayWAMessage(prep)
                 break
-        case 'rolegtli':
+        case 'moba':
         rolegtli =`*Hallo, Senang bertemu anda!*
-*Ingin melihat server GTPS dengan Role murah?*
-*Cek list Server GTLI dibawah!*`
-               buttons = [{buttonId: `${prefix}pricegtli`,buttonText:{displayText: 'CEK LIST'},type:1}]
+*Ingin melihat list harga dm ML murah?*
+*Cek list harga dibawah!*`
+               buttons = [{buttonId: `${prefix}ml`,buttonText:{displayText: 'CEK LIST'},type:1}]
 
                imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
 
                buttonsMessage = {
-               contentText: `${rolegtli}`,
+               contentText: `${moba}`,
                footerText: '© PsycoBOT', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -898,16 +898,16 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                prep = await dha.prepareMessageFromContent(from,{buttonsMessage},{quoted: troli})
               dha.relayWAMessage(prep)
                 break
-         case 'rolegtivd':
+         case 'freefire':
         rolegtivd =`*Hallo, Senang bertemu anda!*
-*Ingin melihat server GTPS dengan Role murah?*
-*Cek list Server GTIVD dibawah!*`
-               buttons = [{buttonId: `${prefix}pricegtivd`,buttonText:{displayText: 'CEK LIST'},type:1}]
+*Ingin melihat list harga dm ff yg murah?*
+*Cek list harga dibawah!*`
+               buttons = [{buttonId: `${prefix}ff`,buttonText:{displayText: 'CEK LIST'},type:1}]
 
                imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
 
                buttonsMessage = {
-               contentText: `${rolegtivd}`,
+               contentText: `${freefire}`,
                footerText: '© PsycoBOT', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -1512,17 +1512,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 *Dengan cara, Ketik* ${prefix}owner *Ya!*`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: mek, caption: teksnya })
               break             
-//------------------< bayar menu >-------------------  
-case 'bayar':
-gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
-teksnya = `*[ PAYMENT ]*
-*Gopay :* 085643260438
-*Pulsa :* 085643260438
-*Ovo :* 085643260438
-*[ © Creator Psyco BOTZ ]*`
-        dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
-              break
- 
+
 case 'buttonstik':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*「MENU STICKER」*
@@ -1694,93 +1684,114 @@ case 'buttonown':
 *き⃟🦈 ${prefix}chat* _nomor|teks_`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftext, caption: teksnya })
               break
-case 'pricegtivd':
+//------------------< Shop Cmd >-------------------
+case 'ff':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
-              teksnya = `*Price Role GTIVD*
-*Link Grup :* https://chat.whatsapp.com/FJdtdDteQkkBSXkAl44sey
+              teksnya = `*「DIAMOND FREEFIRE」*
+━━━━━━━━━━━━━━━━━━━━
+• *5 DIAMOND = Rp 1000*
+• *20 DIAMOND = Rp 4.000*
+• *50 DIAMOND = Rp 7.000*
+• *70 DIAMOND = Rp 9.000*
+• *100 DIAMOND = Rp 15.000*
+• *120 DIAMOND = Rp 18.500*
+• *140 DIAMOND = Rp 19.000*
+• *210 DIAMOND = Rp 29.000*
+• *355 DIAMOND = Rp 49.000*
+• *425 DIAMOND = Rp 58.000*
+• *720 DIAMOND = Rp 99.500*
+• *860 DIAMOND = Rp 115.000*
+• *1440 DIAMOND = Rp 190.000*
+• *2000 DIAMOND = Rp 255.000*
 
-VIP       : *40 World Locks*
-Mod     : *70 World Locks*
-Admin : *150 World Locks*
-Divine  : *200 World Locks*
-Owner  : *3 Diamond Locks*
-
-*Order Role? Chat Owner :*
-*iVend :* wa.me/62856432604381`
+• *M.MINGGUAN = Rp 29.130*
+• *M.BULANAN = Rp 150.151*
+━━━━━━━━━━━━━━━━━━━━
+*NOTE :*
+*_JIKA MINAT KETIK .mk_*`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
-case 'pricegtli':
+case 'ml':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
-              teksnya = `Welcome, Price Role GTLI*
-*Link Grup :* https://chat.whatsapp.com/FJdtdDteQkkBSXkAl44sey
+              teksnya = `*「ML FAST PAKET A」*
+Proses _1-15 menit_
+━━━━━━━━━━━━━━━━━━━━
+• *86 DIAMOND = Rp 20.000*
+• *172 DIAMOND = Rp 39.000*
+• *257 DIAMOND = Rp 59.000*
+• *344 DIAMOND = Rp 78.400*
+• *429 DIAMOND = Rp 97.500*
+• *514 DIAMOND = Rp 117.600*
+• *706 DIAMOND = Rp 157.800*
+• *878 DIAMOND = Rp 198.000*
+• *962 DIAMOND = Rp 214.600*
+• *1050 DIAMOND = Rp 233.300*
+• *1412 DIAMOND = Rp 315.000*
+• *2194 DIAMOND = Rp 453.000*
+• *3688 DIAMOND = Rp 754.800*
 
-*Not Unli Role :*
-Devil       : *50 World Locks*
-Mod     : *100 World Locks*
-
-*Unlimited Role :*
-Admin : *150 World Locks*
-Owner  : *225 World Locks*
-King  : *250 World Locks*
-God : *300 World Locks*
-Community : *375 World Locks*
-Corupted : *400 World Locks*
-Manager : *450 World Locks*
-Developer : *500 World Locks*
-Leviathan : *550 World Locks*
-Founder : *600 World Locks*
-Police : *675 World Locks*
-
-*Custom Role :*
-C Role Not Unli : *300 World Locks*
-C Role Unli : *600 World Locks*
-
-*Order Role? Bisa pake Goopay!*
-*Chat Owner :* wa.me/62856432604381`
+• *STARTLIGHT M = Rp 129.360*
+• *TWILIGHT PASS = Rp 289.800*
+━━━━━━━━━━━━━━━━━━━━
+*NOTE :*
+*_JIKA MINAT KETIK .mk_*`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
-case 'pricegtfo':
+case 'pubg':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
-              teksnya = `*Price Role GTFO*
-*Link Grup :* https://chat.whatsapp.com/FJdtdDteQkkBSXkAl44sey
-
-Mod     : *80 World Locks*
-Admin : *150 World Locks*
-Divine  : *200 World Locks*
-Legend  : *3 Diamond Locks*
-Manager  : *4 Diamond Locks*
-Owner  : *7 Diamond Locks*
-
-*Order Role? Chat Owner :*
-*UFO GTFO :* wa.me/62856432604381`
+              teksnya = `*PUBGM PAKET (B)*
+(10-120 Menit) 
+16 💵      Rp 4.000
+26 💵      Rp 6.050
+52 💵      Rp 9.950
+105 💵   Rp 20.500
+131 💵   Rp 23.500
+263 💵   Rp 47,000
+530 💵  Rp 91,000
+825 💵   Rp 139,000
+1100 💵 Rp 182,000
+1925 💵 Rp 316,000
+2200 💵 Rp 361,000
+2463 💵 Rp 396,000
+3025 💵 Rp 481,000
+4125 💵 Rp 672,000
+*_JIKA MINAT KETIK .mk_*`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
-case 'ruleswave':
+case 'masukandata':
+case 'mk':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
-              teksnya = `*_Welcome To WAVEㅤFMLY!_*
-*Rules* (Peraturan) :
+              teksnya = `
+*「NIZAM STORE」*
+━━━━━━━━━━━━━━━━━━━━
+FORMAT ORDER 
 
-*Usia Umur 13+!!*
-*Good Atitude!!*
-*Toxic boleh, tapi sewajarnya!!*
-*Batas CN 2/3Minggu!!*
-*KD Min 1.00+*
-*Menghargai 1 Sama Lain*
-*Jangan Kirim/Send Yang Berbau Porno(18+)*
-*Untuk selengkapnya open Member bisa hubungin Kapten(DENARA)*
-*Wajib Nge team tour!!*
-*Gak Pilih Pilih Team!!*
+GAME : 
+NICKNAME : 
+ID : 
+ID SERVER (khusus MLBB) : 
+JUMLAH ORDERAN : 
+SISA DM/UC : 
+PAKET : 
 
-*Saran CN :* MTㅤ(NAMA)
-*WAJIB PUSH DT 1ORANG 100DT!!*
-*HARUS PUNYA BUKTI SS,KALO UDAH SAMPAI 100DT!!*
-*3HARI GA ON KICK!!*
-
-*ID FF :* 1225504255 (DENARA)
-*Minat Join? Chat* wa.me/62856432604381
-#WAVEFOREVER!`
+*_ISI FORMAT SESUAI YANG DIATAS_*
+━━━━━━━━━━━━━━━━━━━━
+*NOTE:*
+*1. Jangan Lupa Bukti Tf*
+*2. Jika Mau Tf Harap Hubungi*
+*Owner Terlebih Dahulu !!*
+*3. Otomatis Pesanan Anda*
+*Langsung Di Proses*
+*4. Untuk List Pembayaran Ketik .bayar`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
+case 'bayar':
+              gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
+              teksnya = `*「PAYMENT」*
+• GOPAY : https://telegra.ph/file/ffba186c9fd6f8c3e519f.jpg
+• *DANA :* ~BELOM OPEN~
+• *OVO :* 085643260438
+━━━━━━━━━━━━━━━━━━━━
 			
                                                                                                                         
 //------------------< Sticker Cmd >-------------------
@@ -4518,16 +4529,16 @@ case 'quotesdilan':
       case 'grupmenu': 
              dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
              break
-      case 'pricegtivd': 
+      case 'ff': 
              dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
              break
-      case 'rolegtli': 
+      case 'moba': 
              dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
              break
-      case 'rolegtivd': 
+      case 'freefire': 
              dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
              break
-      case 'pricegtli': 
+      case 'ml': 
              dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
              break
       case 'funmenu':
