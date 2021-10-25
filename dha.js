@@ -898,6 +898,26 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                prep = await dha.prepareMessageFromContent(from,{buttonsMessage},{quoted: troli})
               dha.relayWAMessage(prep)
                 break
+                
+         case 'pabji':
+        rolegtli =`*Hallo, Senang bertemu anda!*
+*Ingin melihat list harga dm PUBG murah?*
+*Cek list harga dibawah!*`
+               buttons = [{buttonId: `${prefix}pubg`,buttonText:{displayText: 'CEK LIST'},type:1}]
+
+               imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
+
+               buttonsMessage = {
+               contentText: `${pabji}`,
+               footerText: '© PsycoBOT', imageMessage: imageMsg,
+               buttons: buttons,
+               headerType: 4
+}
+
+               prep = await dha.prepareMessageFromContent(from,{buttonsMessage},{quoted: troli})
+              dha.relayWAMessage(prep)
+                break
+                
          case 'freefire':
         rolegtivd =`*Hallo, Senang bertemu anda!*
 *Ingin melihat list harga dm ff yg murah?*
@@ -907,7 +927,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
 
                buttonsMessage = {
-               contentText: `${freefire}`,
+               contentText: `${prefix}freefire`,
                footerText: '© PsycoBOT', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
@@ -918,8 +938,8 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                 break
         case 'command':
                list = []
-               listmenu = [`groupmenu`,`wibumenu`,`stickermenu`,`islammenu`,`sertimenu`,`ceritamenu`,`makermenu`,`dewasamenu`,`ownermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`toolsmenu`]
-               listmenuu = [`Menu Group`,`Wibu Menu`,`Sticker Menu`,`Islam Menu`,`Serti Menu`,`Cerita Menu`,`Maker Menu`,`Dewasa Menu`,`Owner Menu`,`Game Menu`,`Fun Menu`,`Downloader`,`Info Menu`,`MenuLainnya`,`Tools Menu`]
+               listmenu = [`groupmenu`,`wibumenu`,`stickermenu`,`islammenu`,`sertimenu`,`ceritamenu`,`makermenu`,`dewasamenu`,`ownermenu`,`gamemenu`,`funmenu`,`downloadmenu`,`infomenu`,`othermenu`,`toolsmenu`,`othercmd`]
+               listmenuu = [`Menu Group`,`Wibu Menu`,`Sticker Menu`,`Islam Menu`,`Serti Menu`,`Cerita Menu`,`Maker Menu`,`Dewasa Menu`,`Owner Menu`,`Game Menu`,`Fun Menu`,`Downloader`,`Info Menu`,`MenuLainnya`,`Tools Menu`,`Shop Menu`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
@@ -938,8 +958,8 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                break
        case 'othercmd':
                list = []
-               listmenu = [`ruleswave`]
-               listmenuu = [`Rules Guild`]
+               listmenu = [`freefire`,`moba`,`pabji`]
+               listmenuu = [`DM FF`,`DM ML`,`UC PUBG`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
@@ -954,7 +974,7 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
                    }
                         list.push(yy)
            }
-               listmsg(from, `${ucapanWaktu}`,  `*Hallo Kak* ${pushname}\nCek Price Role Disini!`, list)
+               listmsg(from, `${ucapanWaktu}`,  `*Hallo Kak* ${pushname}\nCek Harga Disini!`, list)
                break
        case 'store':
                list = []
@@ -1708,7 +1728,7 @@ case 'ff':
 • *M.BULANAN = Rp 150.151*
 ━━━━━━━━━━━━━━━━━━━━
 *NOTE :*
-*_JIKA MINAT KETIK .mk_*`
+*_JIKA MINAT KETIK ${prefix}md_*`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'ml':
@@ -1734,7 +1754,7 @@ Proses _1-15 menit_
 • *TWILIGHT PASS = Rp 289.800*
 ━━━━━━━━━━━━━━━━━━━━
 *NOTE :*
-*_JIKA MINAT KETIK .mk_*`
+*_JIKA MINAT KETIK ${prefix}md_*`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'pubg':
@@ -1744,7 +1764,7 @@ case 'pubg':
 16 💵      Rp 4.000
 26 💵      Rp 6.050
 52 💵      Rp 9.950
-105 💵   Rp 20.500
+105 💵  Rp 20.500
 131 💵   Rp 23.500
 263 💵   Rp 47,000
 530 💵  Rp 91,000
@@ -1755,11 +1775,11 @@ case 'pubg':
 2463 💵 Rp 396,000
 3025 💵 Rp 481,000
 4125 💵 Rp 672,000
-*_JIKA MINAT KETIK .mk_*`
+*_JIKA MINAT KETIK ${prefix}md_*`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'masukandata':
-case 'mk':
+case 'md':
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `
 *「NIZAM STORE」*
@@ -1782,7 +1802,7 @@ PAKET :
 *Owner Terlebih Dahulu !!*
 *3. Otomatis Pesanan Anda*
 *Langsung Di Proses*
-*4. Untuk List Pembayaran Ketik .bayar`
+*4. Untuk List Pembayaran Ketik ${prefix}bayar`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 case 'bayar':
@@ -4287,7 +4307,7 @@ case 'asmaulhusna':
                     break                                         
 //------------------< serti menu >-------------------   
 case 'sertitolol': 				
-				if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh ${prefix}tololserti KURR GAMTENG`)
+				if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh ${prefix}tololserti PSYCO BOTZ`)
 				ct = body.slice(12)
 				zhain = await getBuffer(`https://api.lolhuman.xyz/api/toloserti?apikey=${setting.lolkey}&name=${ct}`)
 				dha.sendMessage(from, zhain, image, { quoted: mek, caption: 'Nih Dah Jadi' })
@@ -4524,18 +4544,6 @@ case 'quotesdilan':
              break
       case 'groupmenu': 
       case 'grupmenu': 
-             dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
-             break
-      case 'ff': 
-             dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
-             break
-      case 'moba': 
-             dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
-             break
-      case 'freefire': 
-             dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
-             break
-      case 'ml': 
              dha.sendMessage(from, groupMenu(prefix), MessageType.text, {quoted: troli})
              break
       case 'funmenu':
