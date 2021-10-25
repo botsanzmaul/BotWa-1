@@ -1815,26 +1815,7 @@ case 'bayar':
 			
                                                                                                                         
 //------------------< Sticker Cmd >-------------------
-       case 'addcmd': 
-       case 'setcmd':
-              /*if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}buypremium* untuk membeli premium`)*/
-              if (isQuotedSticker) {
-              if (!q) return reply(`Penggunaan : ${command} cmdnya dan tag stickernya`)
-              var kodenya = mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString('base64')
-              addCmd(kodenya, q)
-              textImg("Done!")
-              } else {
-              reply('tag stickenya')
-}
-              break
-       case 'delcmd':
-              /*if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}buypremium* untuk membeli premium`)*/
-              if (!isQuotedSticker) return reply(`Penggunaan : ${command} tagsticker`)
-              var kodenya = mek.message.extendedTextMessage.contextInfo.quotedMessage.stickerMessage.fileSha256.toString('base64')
-            _scommand.splice(getCommandPosition(kodenya), 1)
-              fs.writeFileSync('./database/bot/scommand.json', JSON.stringify(_scommand))
-              textImg("Done!")
-              break
+
        case 'listcmd':
               let teksnyee = `\`\`\`「 LIST STICKER CMD 」\`\`\``
               let cemde = [];
@@ -1844,7 +1825,6 @@ case 'bayar':
 }
               mentions(teksnyee, cemde, true)
               break
-//------------------< self and public >---------------------
 //------------------< Downloader/Search/Anime >-------------------
        case 'igdl':
        case 'instagram':
