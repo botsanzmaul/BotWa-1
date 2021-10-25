@@ -3472,7 +3472,7 @@ break
               reply(`Jangan Lupa Subscribe YT Owner:\n https://youtube.com/PINOMODZ`)
               break
        case 'masukandata':
-             *「NIZAM STORE」*
+             reply(`*「NIZAM STORE」*
 ━━━━━━━━━━━━━━━━━━━━
 FORMAT ORDER 
 
