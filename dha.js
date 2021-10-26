@@ -1144,8 +1144,8 @@ TQTO: ALL CREATOR BOT, PENYEDIA APIKEY`
                break
        case 'store':
                list = []
-               listmenu = [`ff`,`ml`,`pubg`,`masukandata`,`bayar`,`help`,`grupbot`]
-               listmenuu = [`LIST DM FF`,`LIST DM ML`,`MASUKAN DATA`,`BAYAR`,`GRUP BOT`,`BACK TO MENU`]
+               listmenu = [`ff`,`ml`,`pubg`,`masukandata`,`bayar`,`help`,`grupbot`,`owner`]
+               listmenuu = [`LIST DM FF`,`LIST DM ML`,`MASUKAN DATA`,`BAYAR`,`GRUP BOT`,`BACK TO MENU`,`OWNER`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
@@ -3621,12 +3621,12 @@ PAKET :
 *_ISI FORMAT SESUAI YANG DIATAS_*
 ━━━━━━━━━━━━━━━━━━━━
 *NOTE:*
-*1. Jangan Lupa Bukti Tf*
-*2. Jika Mau Tf Harap Hubungi*
-*Owner Terlebih Dahulu !!*
-*3. Otomatis Pesanan Anda*
-*Langsung Di Proses*
-*4. Untuk List Pembayaran Ketik ${prefix}bayar`)
+_1. Jangan Lupa Bukti Tf_
+_2. Jika Mau Tf Harap Hubungi_
+_Owner Terlebih Dahulu !!_
+_3. Otomatis Pesanan Anda_
+_Langsung Di Proses_
+_4. Untuk List Pembayaran Ketik ${prefix}bayar_`)
               break
 case 'ff':
              reply(`*「DIAMOND FREEFIRE」*
