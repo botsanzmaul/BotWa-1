@@ -1144,8 +1144,8 @@ TQTO: ALL CREATOR BOT, PENYEDIA APIKEY`
                break
        case 'store':
                list = []
-               listmenu = [`ff`,`ml`,`pubg`,`masukandata`,`bayar`,`help`,`grupbot`,`owner`]
-               listmenuu = [`LIST DM FF`,`LIST DM ML`,`MASUKAN DATA`,`BAYAR`,`GRUP BOT`,`BACK TO MENU`,`OWNER`]
+               listmenu = [`ff`,`ml`,`pubg`,`masukandata`,`bayar`,`help`,`grupbot`,`grupdm`,`owner`]
+               listmenuu = [`LIST DM FF`,`LIST DM ML`,`LIST DM PUBG`,`MASUKAN DATA`,`BAYAR`,`BACK TO MENU`,`GRUP BOT`,`GRUP DM`,`OWNER`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
