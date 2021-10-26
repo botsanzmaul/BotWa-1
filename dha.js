@@ -839,13 +839,13 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
         case 'help':
         menu =`Hai Kak.....\n*${pushname}*\n\`\`\`Saya PSYCOBOTZ,SENANG BISA BERTEMU DENGANMU HARI INI\`\`\`
         
-𝗜𝗡𝗙𝗢 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔 𝗕𝗢𝗧
+INFO PENGGUNA BOT
 ❏ NAMA : *${pushname}*
 ❏ API : *@${sender.split('@')[0]}*
 ❏ STATUS : *${isOwner ? 'OWNER' : isPremium ? 'Premium' : 'Gratisan'}*
 ❏ LIMIT : *${isPremium ? 'Unlimited' : `${gcount}`}*
 
-𝗜𝗡𝗙𝗢 𝗕𝗢𝗧
+INFO BOT
 ❏ NAMA : *PSYCOBOTZ*
 ❏ API : @62856432604381
 ❏ OWNER : *©NIZAM STORE*
@@ -853,9 +853,9 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 ❏ AKTIF : *${runtime(process.uptime())}*
 ❏ BATERAI : *${baterai}%*
 ❏ PREIFIX : *『${prefix}』*
-❏ RESTAPI : https://api-psycho.herokuapp.com
+❏ WEB : https://api-psycho.herokuapp.com
 
-   ━━━━━ 𝗔𝗟𝗟 𝗠𝗘𝗡𝗨 ━━━━━
+   ━━━━━ ALL MENU ━━━━━
 
 𝖨𝖭𝖥𝖮 𝖬𝖤𝖭𝖴
 *き⃟🦈 ${prefix}update*
@@ -1064,6 +1064,7 @@ Makernya banyak tu kalian masukan aja namanya sendiri
 *き⃟🦈 ${prefix}setbio*
 *き⃟🦈 ${prefix}setname*
 *き⃟🦈 ${prefix}getpp*
+*き⃟🦈 ${prefix}spamsms*
 *き⃟🦈 ${prefix}sharelock*
 *き⃟🦈 ${prefix}chat* _nomor|teks_
 
@@ -1076,6 +1077,16 @@ Makernya banyak tu kalian masukan aja namanya sendiri
 *き⃟🦈 ${prefix}google* _query_
 *き⃟🦈 ${prefix}image* _query_
 *き⃟🦈 ${prefix}pinterest* _query_
+*き⃟🦈 ${prefix}translate*
+*き⃟🦈 ${prefix}kbbi*
+*き⃟🦈 ${prefix}covidindo*
+*き⃟🦈 ${prefix}covidglobal*
+*き⃟🦈 ${prefix}jarak*
+*き⃟🦈 ${prefix}wikipedia*
+*き⃟🦈 ${prefix}jadwaltv*
+*き⃟🦈 ${prefix}cuaca*
+*き⃟🦈 ${prefix}infogempa*
+
 𝖥𝖴𝖭 𝖬𝖤𝖭𝖴 
 *き⃟🦈 ${prefix}mining*
 *き⃟🦈 ${prefix}cekwatak*
@@ -1096,8 +1107,8 @@ Makernya banyak tu kalian masukan aja namanya sendiri
 *き⃟🦈 ${prefix}babi*
 *き⃟🦈 ${prefix}cekganteng*
 *き⃟🦈 ${prefix}cekcantik*
-©PsycoBOTZ`
-               buttons = [{buttonId: `${prefix}command`,buttonText:{displayText: '𝗔𝗟𝗟 𝗠𝗘𝗡𝗨'},type:1},{buttonId: `${prefix}rules`,buttonText:{displayText: '𝗥𝗨𝗟𝗘𝗦'},type:1},{buttonId:`${prefix}store`,buttonText:{displayText:'SIMPLE BUTTON MENU'},type:1}]
+TQTO: ALL CREATOR BOT, PENYEDIA APIKEY`
+               buttons = [{buttonId: `${prefix}command`,buttonText:{displayText: 'ALL MENU'},type:1},{buttonId: `${prefix}rules`,buttonText:{displayText: 'RULES'},type:1},{buttonId:`${prefix}store`,buttonText:{displayText:'SHOP GAME'},type:1}]
 
                imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
 
@@ -1133,8 +1144,8 @@ Makernya banyak tu kalian masukan aja namanya sendiri
                break
        case 'store':
                list = []
-               listmenu = [`buttonstik`,`buttondl`,`buttonown`,`buttonpen`,`buttongame`,`buttongc`,`buttonwibu`]
-               listmenuu = [`STICKER MENU`,`DOWNLOAD MENU`,`OWNER MENU`,`NULIS MENU`,`GAME MENU`,`GRUP MENU`,`WIBU MENU`]
+               listmenu = [`ff`,`ml`,`pubg`,`masukandata`,`bayar`,`help`,`grupbot`]
+               listmenuu = [`LIST DM FF`,`LIST DM ML`,`MASUKAN DATA`,`BAYAR`,`GRUP BOT`,`BACK TO MENU`]
                nombor = 1
                startnum = 0
                for (let x of listmenu) {
@@ -1142,14 +1153,14 @@ Makernya banyak tu kalian masukan aja namanya sendiri
                     rows: [
                        {
                         title: `${listmenuu[startnum++]}`,
-                        description: `\n\n\n\n\`\`\`JAN LUPA SUBSCRIBE KURRXD\`\`\``,
+                        description: `\n\n\n\n\`\`\`JAN LUPA FOLLOW IG: @xnoob_ganz\`\`\``,
                         rowId: `${prefix}${x}`
                       }
                     ]
                    }
                         list.push(yy)
            }
-               listmsg(from, `${ucapanWaktu}`,   `Hai kak.....\n*${pushname}*\nJangan Lupa Subscribe KurrXd Yahh`, list)
+               listmsg(from, `${ucapanWaktu}`,   `Hai kak.....\n*${pushname}*\nJangan Lupa Follow IG: @xnoob_ganz Yahh`, list)
                break
 //------------------< Game >------------------- 
         case 'limitgame': 
@@ -1616,14 +1627,14 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
          case 'spamsms':
                     if (args.length == 0) return reply(`Example: ${prefix + command} 08303030303030`)
                     nomor = args[0]
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam1?apikey=genbotkey&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam2?apikey=genbotkey&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam3?apikey=genbotkey&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam4?apikey=genbotkey&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam5?apikey=genbotkey&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam6?apikey=genbotkey&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam7?apikey=genbotkey&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam8?apikey=genbotkey&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam1?apikey=${setting.lolkey}&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam2?apikey=${setting.lolkey}&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam3?apikey=${setting.lolkey}&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam4?apikey=${setting.lolkey}&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam5?apikey=${setting.lolkey}&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam6?apikey=${setting.lolkey}&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam7?apikey=${setting.lolkey}&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam8?apikey=${setting.lolkey}&nomor=${nomor}`)
                     reply("Success")
                     break        
 //------------------< Premium >-------------------
@@ -1691,7 +1702,7 @@ gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
 teksnya = ` *「PAYMENT」*
 • GOPAY : https://telegra.ph/file/ffba186c9fd6f8c3e519f.jpg
 • PULSA : 085643260438
-• OVO : 085643260438
+• OVO : 088216185132
 ━━━━━━━━━━━━━━━━━━━━`
         dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
@@ -1844,6 +1855,7 @@ case 'buttonown':
 *き⃟🦈 ${prefix}setname*
 *き⃟🦈 ${prefix}getpp*
 *き⃟🦈 ${prefix}sharelock*
+*き⃟🦈 ${prefix}spamsms*
 *き⃟🦈 ${prefix}chat* _nomor|teks_`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftext, caption: teksnya })
               break 
@@ -2787,6 +2799,128 @@ a += `\`\`\`き⃟🦈 Title : ${i.title}\`\`\`
               reply('_Perlu setidaknya 10 user yang memiliki level di database!_')
 }
               break
+ //━━━━━━━━━━━━━━━[ FITUR INFORMATION ]━━━━━━━━━━━━━━━━━//
+
+case 'kbbi':
+if (args.length == 0) return reply(`Nama Yg Mau Dicari Mana Tod\nContoh: ${prefix + command} kursi`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/kbbi?apikey=${setting.lolkey}&query=${args.join(" ")}`)
+lila = get_result.result
+ini_txt = `\`\`\`Kata : ${lila[0].nama}\`\`\`\n`
+ini_txt += `\`\`\`Kata Dasar : ${lila[0].kata_dasar}\`\`\`\n`
+ini_txt += `\`\`\`Pelafalan : ${lila[0].pelafalan}\`\`\`\n`
+ini_txt += `\`\`\`Bentuk Tidak Baku : ${lila[0].bentuk_tidak_baku}\`\`\`\n\n`
+for (var x of lila) {
+ini_txt += `\`\`\`Kode : ${x.makna[0].kelas[0].kode}\`\`\`\n`
+ini_txt += `\`\`\`Kelas : ${x.makna[0].kelas[0].nama}\`\`\`\n`
+ini_txt += `\`\`\`Artinya : \n${x.makna[0].kelas[0].deskripsi}\`\`\`\n\n`
+ini_txt += `\`\`\`Makna Lain : \n${x.makna[0].submakna}\`\`\`\n `
+ini_txt += `\`\`\`Contoh Kalimat : \n${x.makna[0].contoh}\`\`\`\n`
+}
+reply(ini_txt)
+break
+case 'jarak':
+if (args.length == 0) return reply(`Nama Kotanya Mana Tod\nContoh: ${prefix + command} jakarta - yogyakarta`)
+pauls = args.join(" ")
+teks1 = pauls.split("-")[0].trim()
+teks2 = pauls.split("-")[1].trim()
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/jaraktempuh?apikey=${setting.lolkey}&kota1=${teks1}&kota2=${teks2}`)
+x = get_result.result
+ini_txt = `Informasi Jarak dari ${teks1} ke ${teks2} :\n\n`
+ini_txt += `\`\`\`◪ Asal :\`\`\` ${x.from.name}\n`
+ini_txt += `\`\`\`◪ Garis Lintang :\`\`\` ${x.from.latitude}\n`
+ini_txt += `\`\`\`◪ Garis Bujur :\`\`\` ${x.from.longitude}\n\n`
+ini_txt += `\`\`\`◪ Tujuan :\`\`\` ${x.to.name}\n`
+ini_txt += `\`\`\`◪ Garis Lintang :\`\`\` ${x.to.latitude}\n`
+ini_txt += `\`\`\`◪ Garis Bujur :\`\`\` ${x.to.longitude}\n\n`
+ini_txt += `\`\`\`◪ Jarak Tempuh :\`\`\` ${x.jarak}\n`
+ini_txt += `\`\`\`◪ Waktu Tempuh :\`\`\`\n`
+ini_txt += `   ╭───────────────❏\n`
+ini_txt += `❍┤ Kereta Api : ${x.kereta_api}\n`
+ini_txt += `❍┤ Pesawat : ${x.pesawat}\n`
+ini_txt += `❍┤ Mobil : ${x.mobil}\n`
+ini_txt += `❍┤ Motor : ${x.motor}\n`
+ini_txt += `❍┤ Jalan Kaki : ${x.jalan_kaki}\n`
+ini_txt += `   ╰───────────────❏\n`
+reply(ini_txt)
+break
+case 'wikipedia':
+if (args.length == 0) return reply(`Nama Yg Mau Di Cari Mana Tod\nContoh: ${prefix + command} Tahu`)
+query = args.join(" ")
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/wiki?apikey=${setting.lolkey}&query=${query}`)
+get_result = get_result.result
+reply(get_result)
+break
+case 'translate':
+if (args.length == 0) return reply(`Teks Yg Mau Di Translate Mana Tod\nContoh: ${prefix + command} en Tahu Bacem`)
+kode_negara = args[0]
+args.shift()
+ini_txt = args.join(" ")
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/translate/auto/${kode_negara}?apikey=${setting.lolkey}&text=${ini_txt}`)
+get_result = get_result.result
+init_txt = `From : ${get_result.from}\n`
+init_txt += `To : ${get_result.to}\n`
+init_txt += `Original : ${get_result.original}\n`
+init_txt += `Translated : ${get_result.translated}\n`
+init_txt += `Pronunciation : ${get_result.pronunciation}\n`
+reply(init_txt)
+break
+case 'jadwaltv':
+if (args.length == 0) return reply(`Nama Channel Nya Mana Tod\nContoh: ${prefix + command} SCTV`)
+channel = args[0]
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/jadwaltv/${channel}?apikey=${setting.lolkey}`)
+get_result = get_result.result
+ini_txt = `Jadwal TV ${channel.toUpperCase()}\n`
+for (var x in get_result) {
+ini_txt += `${x} - ${get_result[x]}\n`
+}
+reply(ini_txt)
+break
+case 'infogempa':
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/infogempa?apikey=${setting.lolkey}`)
+get_result = get_result.result
+ini_txt = `Lokasi : ${get_result.lokasi}\n`
+ini_txt += `Waktu : ${get_result.waktu}\n`
+ini_txt += `Potensi : ${get_result.potensi}\n`
+ini_txt += `Magnitude : ${get_result.magnitude}\n`
+ini_txt += `Kedalaman : ${get_result.kedalaman}\n`
+ini_txt += `Koordinat : ${get_result.koordinat}`
+get_buffer = await getBuffer(get_result.map)
+await dha.sendMessage(from, get_buffer, image, { quoted: ftrol, caption: ini_txt })
+break
+case 'cuaca':
+if (args.length == 0) return reply(`Nama Kotanya Mana Tod\nContoh: ${prefix + command} Temanggung`)
+daerah = args[0]
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/cuaca/${daerah}?apikey=${setting.lolkey}`)
+get_result = get_result.result
+ini_txt = `Tempat : ${get_result.tempat}\n`
+ini_txt += `Cuaca : ${get_result.cuaca}\n`
+ini_txt += `Angin : ${get_result.angin}\n`
+ini_txt += `Description : ${get_result.description}\n`
+ini_txt += `Kelembapan : ${get_result.kelembapan}\n`
+ini_txt += `Suhu : ${get_result.suhu}\n`
+ini_txt += `Udara : ${get_result.udara}\n`
+ini_txt += `Permukaan laut : ${get_result.permukaan_laut}\n`
+await dha.sendMessage(from, { degreesLatitude: get_result.latitude, degreesLongitude: get_result.longitude }, location, { quoted: ftrol })
+reply(ini_txt)
+break
+case 'covidindo':
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/corona/indonesia?apikey=${setting.lolkey}`)
+get_result = get_result.result
+ini_txt = `Positif : ${get_result.positif}\n`
+ini_txt += `Sembuh : ${get_result.sembuh}\n`
+ini_txt += `Dirawat : ${get_result.dirawat}\n`
+ini_txt += `Meninggal : ${get_result.meninggal}`
+reply(ini_txt)
+break
+case 'covidglobal':
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/corona/global?apikey=${setting.lolkey}`)
+get_result = get_result.result
+ini_txt = `Positif : ${get_result.positif}\n`
+ini_txt += `Sembuh : ${get_result.sembuh}\n`
+ini_txt += `Dirawat : ${get_result.dirawat}\n`
+ini_txt += `Meninggal : ${get_result.meninggal}`
+reply(ini_txt)
+break
 //------------------< Stalk >-------------------
       case 'stalkgithub':
       case 'githubstalk':
@@ -2877,7 +3011,7 @@ a += `\`\`\`き⃟🦈 Title : ${i.title}\`\`\`
 case 'ffstalk':
 if (args.length == 0) return reply(`Idnya mana kak?`)
                     ff_id = args[0]
-                    get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/freefire/${ff_id}?apikey=genbotkey`)
+                    get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/freefire/${ff_id}?apikey=${setting.lolkey}`)
                     reply(`nih kak`)
                     break      
 //------------------< Sticker/Tools >-------------------
@@ -3245,7 +3379,7 @@ break
                 case 'xnxx':
                     if (args.length == 0) return reply(`Contoh: ${prefix + command} https://www.xnxx.com/video-uy5a73b/mom_is_horny_-_brooklyn`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/xnxx?apikey=genbotkey&url=${query}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/xnxx?apikey=${setting.lolkey}&url=${query}`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Duration : ${get_result.duration}\n`
@@ -3267,7 +3401,7 @@ break
         case 'xnxxsearch':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=genbotkey&query=${query}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=${setting.lolkey}&query=${query}`)
                     get_result = get_result.result
                     ini_txt = ""
                     for (var x of get_result) {
@@ -4489,14 +4623,14 @@ case 'tahta':
          if (args.length == 0) return reply(`Usage: ${prefix} + command} text\nExample: ${prefix + command} DHA`) 
          teks = args.join(" ") 
          reply('SABAR YA SAYANG....') 
-         buffer = await getBuffer(`https://api.lolhuman.xyz/api/hartatahta?apikey=genbotkey&text=${teks}`) 
+         buffer = await getBuffer(`https://api.lolhuman.xyz/api/hartatahta?apikey=${setting.lolkey}&text=${teks}`) 
          dha.sendMessage(from, buffer, image, {quoted: ftoko, caption : 'ini hasilnya kak....'})
          break    
 case 'pornhub':
          if (args.length == 0) return reply(`Contoh: ${prefix + command} PSYCOBOTZ`)
          txt1 = args[0]
          txt2 = args[1]
-         ini_anu = await getBuffer(`http://api.lolhuman.xyz/api/textprome2/pornhub?apikey=genbotkey&text1=${txt1}&text2=${txt2}`)
+         ini_anu = await getBuffer(`http://api.lolhuman.xyz/api/textprome2/pornhub?apikey=${setting.lolkey}&text1=${txt1}&text2=${txt2}`)
         dha.sendMessage(from, ini_anu, image, {quoted: ftoko})
         break
 case 'cup':          
@@ -4682,10 +4816,10 @@ case 'coffe':
 					break                            
 //------------------< Menunya Bang:v >-------------------
       case 'dana':
-             reply(`DANA : 085643260438\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
+             reply(`OVO : 088216185132\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break
            case 'gopay':
-             reply(`GOPAY : 085643260438\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
+             reply(`GOPAY : https://telegra.ph/file/ffba186c9fd6f8c3e519f.jpg\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
              break  
          case 'pulsa':
              reply(`PULSA : 085643260438\n\n SAYA CUMAN BISA BILANG TERIMAKASIH ATAS KEMURAHAN HATI TUAN TELAH MEMBERIKAN KAMI BANTUAN.SEMOGA ALLAH MEMBALAS APA YG TUAN BERIKAN KE PADA SAYA`)
@@ -4695,6 +4829,9 @@ case 'coffe':
              break
       case 'grupbot':
              reply('https://chat.whatsapp.com/FJdtdDteQkkBSXkAl44sey')
+             break
+      case 'grupdm':
+             reply('https://chat.whatsapp.com/LtaYL5HB2oY7SpkL1leNf6')
              break
       case 'ownermenu':
              dha.sendMessage(from, ownerMenu(prefix), MessageType.text, {quoted: troli})
