@@ -309,6 +309,8 @@ return`
 ▢ ${prefix}cup1
 ▢ ${prefix}coffe
 ▢ ${prefix}birthdaycake
+▢ ${prefix}ffserti
+▢ ${prefix}tranformer
 ▢ ${prefix}metallogo
 ▢ ${prefix}lighttext
 ▢ ${prefix}halloween
@@ -341,12 +343,12 @@ return`
 ▢ ${prefix}xnxxsearch
 ▢ ${prefix}asupan
 ▢ ${prefix}randombokep
-▢ ${prefix}desah
-▢ ${prefix}desah1
-▢ ${prefix}desah2
-▢ ${prefix}desah3
-▢ ${prefix}desah4
-▢ ${prefix}desah5
+▢ ${prefix}rika
+▢ ${prefix}bocil
+▢ ${prefix}ukty
+▢ ${prefix}hijab
+▢ ${prefix}ghea
+▢ ${prefix}cecan
 ▢ ${prefix}desah6
 
 
