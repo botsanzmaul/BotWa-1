@@ -1041,8 +1041,8 @@ WIBU MENU
 *=> ${prefix}doujindesu*
 *=> ${prefix}storyanime*
 *=> ${prefix}otakuongoing*
-*=> ${prefix}nhentai *code*
-*=> ${prefix}nekopoi _link_
+*=> ${prefix}nhentai* _code_
+*=> ${prefix}nekopoi* _link_
 *=> ${prefix}nekopoi3d*
 *=> ${prefix}nekopoicosplay*
 *=> ${prefix}nekopoisearch*
@@ -1130,7 +1130,7 @@ _NOTE: FITUR MASIH TAHAP PENGEMBANGAN_`
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: '\`\`\`MAU SEWA BOT INI HUBUNGIN NIZAM STORE WA 62856432604381\`\`\`', imageMessage: imageMsg,
+               footerText: '\`\`\`JIKA NEMU BUG/EROR SEGERA HUBUNGIN OWNER WA 62856432604381\`\`\`', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -1287,7 +1287,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'tebaklagu':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaklagu.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
-              get_result = await fetchJson(`https://api.xteam.xyz/game/tebaklagu?apikey=${setting.xteamkey}&id=4mFuArYRh3SO8jfffYLSER`)
+              get_result = await fetchJson(`https://api.xteam.xyz/game/tebaklagu?apikey=kurrxd09&id=4mFuArYRh3SO8jfffYLSER`)
               get_result = get_result.result
               ini_audio = get_result.preview
               jawaban = get_result.judul
@@ -1310,7 +1310,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'tebaktebakan':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaktebakan.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://api.xteam.xyz/game/tebaktebakan?APIKEY=${setting.xteamkey}`)
+              get_result = await fetchJson(`https://api.xteam.xyz/game/tebaktebakan?APIKEY=kurrxd09`)
               get_result = get_result.result
               jawaban = get_result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
@@ -2428,7 +2428,7 @@ case 'tiktok':
        case '3dnekopoilast':
               reply(mess.wait)
               try {
-              bsangee = await axios.get(`https://api.vhtear.com/neko3d&apikey=${setting.vhtearkey}`)
+              bsangee = await axios.get(`https://api.vhtear.com/neko3d&apikey=FauzanBotz`)
               bsangee2 = bsangee.data
               keluarplay = `*List update 3D JAV*\n`
               for (let i = 0; i < bsangee2.result.length; i++) {
@@ -2444,7 +2444,7 @@ case 'tiktok':
         case 'javnekopoi':
                reply(mess.wait)
                try {
-               bsangce = await axios.get(`https://api.vhtear.com/nekojavlist&apikey=${setting.vhtearkey}`)
+               bsangce = await axios.get(`https://api.vhtear.com/nekojavlist&apikey=FauzanBotz`)
                bsangce2 = bsangce.data
                keluarplay = `*List update JAV*\n`
                for (let i = 0; i < bsangce2.result.length; i++) {
@@ -2459,7 +2459,7 @@ case 'tiktok':
         case 'cosplaynekopoi':
                try {
                reply(mess.wait)
-               bsangbe = await axios.get(`https://api.vhtear.com/nekojavcosplay&apikey=${setting.vhtearkey}`)
+               bsangbe = await axios.get(`https://api.vhtear.com/nekojavcosplay&apikey=FauzanBotz`)
                bsangbe2 = bsangbe.data
                keluarplay = `*List update Cosplay JAV*\n`
                for (let i = 0; i < bsangbe2.result.length; i++) {
@@ -3152,7 +3152,7 @@ break
        case 'ttg':
               if (!q) return await reply(mess.wrongFormat)
               reply(mess.wait)
-              sendWebp(from, `https://api.vhtear.com/textxgif?text=${q}&apikey=${setting.vhtearkey}`)
+              sendWebp(from, `https://api.vhtear.com/textxgif?text=${q}&apikey=FauzanBotz`)
              .then(() => console.log('Success creating GIF!'))
              .catch(async (err) => {
               console.error(err)
@@ -4270,7 +4270,7 @@ case 'linkgc':
 })
               break
         case 'citacita':
-              const cita =['http://piyobot.000webhostapp.com/citacita1.mp3','http://piyobot.000webhostapp.com/citacita2.mp3','http://piyobot.000webhostapp.com/citacita3.mp3','http://piyobot.000webhostapp.com/citacita4.mp3','http://piyobot.000webhostapp.com/citacita5.mp3','http://piyobot.000webhostapp.com/citacita6.mp3','http://piyobot.000webhostapp.com/citacita7.mp3','http://piyobot.000webhostapp.com/citacita8.mp3','http://piyobot.000webhostapp.com/citacita9.mp3','http://piyobot.000webhostapp.com/citacita10.mp3','http://piyobot.000webhostapp.com/citacita11.mp3','http://piyobot.000webhostapp.com/citacita12.mp3','http://piyobot.000webhostapp.com/citacita13.mp3','http://piyobot.000webhostapp.com/citacita14.mp3','http://piyobot.000webhostapp.com/citacita15.mp3','http://piyobot.000webhostapp.com/citacita16.mp3','http://piyobot.000webhostapp.com/citacita17.mp3','http://piyobot.000webhostapp.com/citacita18.mp3','http://piyobot.000webhostapp.com/citacita19.mp3','http://piyobot.000webhostapp.com/citacita20.mp3','http://piyobot.000webhostapp.com/citacita21.mp3','http://piyobot.000webhostapp.com/citacita22.mp3','http://piyobot.000webhostapp.com/citacita23.mp3','http://piyobot.000webhostapp.com/citacita24.mp3','http://piyobot.000webhostapp.com/citacita25.mp3','http://piyobot.000webhostapp.com/citacita26.mp3','http://piyobot.000webhostapp.com/citacita27.mp3','http://piyobot.000webhostapp.com/citacita28.mp3','http://piyobot.000webhostapp.com/citacita29.mp3','http://piyobot.000webhostapp.com/citacita30.mp3','http://piyobot.000webhostapp.com/citacita31.mp3','http://piyobot.000webhostapp.com/citacita32.mp3','http://piyobot.000webhostapp.com/citacita33.mp3','http://piyobot.000webhostapp.com/citacita34.mp3','http://piyobot.000webhostapp.com/citacita35.mp3']
+              const cita =['https://github.com/nizambot/txt/blob/main/citacita/citacita1.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita2.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita3.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita4.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita5.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita6.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita7.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita8.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita9.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita10.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita11.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita12.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita13.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita14.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita15.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita16.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita17.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita18.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita19.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita20.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita21.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita22.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita23.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita24.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita25.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita26.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita27.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita28.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita29.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita30.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita31.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita32.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita33.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita34.mp3','https://github.com/nizambot/txt/blob/main/citacita/citacita35.mp3']
               const cita3 = cita[Math.floor(Math.random() * cita.length)]
               cita2 = await getBuffer(cita3)
               dha.sendMessage(from, cita2, audio,{mimetype: 'audio/mp4', ptt:true, quoted: mek})
