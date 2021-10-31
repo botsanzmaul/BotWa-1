@@ -990,7 +990,6 @@ DEWASA MENU
 *=> ${prefix}xnxx* _link_
 *=> ${prefix}xnxxsearch*
 *=> ${prefix}asupan*
-*=> ${prefix}cecan*
 *=> ${prefix}santuy*
 *=> ${prefix}bocil*
 *=> ${prefix}ghea*
@@ -1110,7 +1109,7 @@ FUN MENU
 *=> ${prefix}citacita*
 *=> ${prefix}toxic*
 *=> ${prefix}cerpen*
-*=> ${prefix}ceritahoro*
+*=> ${prefix}ceritahoror*
 *=> ${prefix}truth*
 *=> ${prefix}dare*
 *=> ${prefix}apakah*
@@ -1250,7 +1249,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'family100':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (game.isfam(from, family100)) return reply(`Masih ada soal yang belum di selesaikan`)
-              anu = await axios.get(`http://api.lolhuman.xyz/api/tebak/family100?apikey=${setting.lolkey}`)
+              anu = await axios.get(`http://api.lolhuman.xyz/api/tebak/family100?apikey=najisbaperanRw`)
               reply(`*JAWABLAH SOAL BERIKUT*\n\n*Soal :* ${anu.data.result.question}\n*Total Jawaban :* ${anu.data.result.aswer.length}\n\nWaktu : ${gamewaktu}s`)
               let anoh = anu.data.result.aswer
               let rgfds = []
@@ -1266,7 +1265,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'tebakanime':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakanime.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebakchara?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebakchara?apikey=najisbaperanRw`)
               get_result = get_result.result
               ini_image = get_result.image
               jawaban = get_result.name
@@ -1372,7 +1371,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'siapaaku':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaksiapaaku.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/siapaaku?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebak/siapaaku?apikey=najisbaperanRw`)
               get_result = get_result.result
               jawaban = get_result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
@@ -1393,7 +1392,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'tebakkata':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakata.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/kata?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebak/kata?apikey=najisbaperanRw`)
               get_result = get_result.result
               jawaban = get_result.jawaban
               pertanyaan = get_result.pertanyaan
@@ -1413,7 +1412,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'tebaklirik':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaklirik.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/lirik?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebak/lirik?apikey=najisbaperanRw`)
               get_result = get_result.result
               jawaban = get_result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
@@ -1434,7 +1433,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
       case 'tebakjenaka':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakjenaka.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/jenaka?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebak/jenaka?apikey=najisbaperanRw`)
               get_result = get_result.result
               jawaban = get_result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
@@ -1455,7 +1454,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'kimiakuis':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakimia.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/unsurkimia?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebak/unsurkimia?apikey=najisbaperanRw`)
               get_result = get_result.result
               jawaban = get_result.lambang
               pertanyaan = get_result.nama
@@ -1475,7 +1474,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'tebakbendera':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakbendera.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/bendera?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebak/bendera?apikey=najisbaperanRw`)
               get_result = get_result.result
               jawaban = get_result.name
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
@@ -1496,7 +1495,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'susunkata':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (susunkata.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/susunkata?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebak/susunkata?apikey=najisbaperanRw`)
               get_result = get_result.result
               jawaban = get_result.jawaban
               pertanyaan = get_result.pertanyaan
@@ -1516,7 +1515,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'asahotak':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (asahotak.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/asahotak?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebak/asahotak?apikey=najisbaperanRw`)
               get_result = get_result.result
               jawaban = get_result.jawaban
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
@@ -1537,7 +1536,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
        case 'caklontong':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (caklontong.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
-              get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/tebak/caklontong2?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebak/caklontong2?apikey=najisbaperanRw`)
               get_result = get_result.result
               jawaban = get_result.answer
               kisi_kisi = jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
@@ -1644,14 +1643,14 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
          case 'spamsms':
                     if (args.length == 0) return reply(`Example: ${prefix + command} 08303030303030`)
                     nomor = args[0]
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam1?apikey=${setting.lolkey}&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam2?apikey=${setting.lolkey}&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam3?apikey=${setting.lolkey}&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam4?apikey=${setting.lolkey}&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam5?apikey=${setting.lolkey}&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam6?apikey=${setting.lolkey}&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam7?apikey=${setting.lolkey}&nomor=${nomor}`)
-                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam8?apikey=${setting.lolkey}&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam1?apikey=najisbaperanRw&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam2?apikey=najisbaperanRw&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam3?apikey=najisbaperanRw&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam4?apikey=najisbaperanRw&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam5?apikey=najisbaperanRw&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam6?apikey=najisbaperanRw&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam7?apikey=najisbaperanRw&nomor=${nomor}`)
+                    await fetchJson(`https://api.lolhuman.xyz/api/sms/spam8?apikey=najisbaperanRw&nomor=${nomor}`)
                     reply("Success")
                     break        
 //------------------< Premium >-------------------
@@ -1720,7 +1719,8 @@ teksnya = ` *「PAYMENT」*
 • GOPAY : https://telegra.ph/file/ffba186c9fd6f8c3e519f.jpg
 • PULSA : 085643260438
 • OVO : 088216185132
-━━━━━━━━━━━━━━━━━━━━`
+━━━━━━━━━━━━━━━━━━━━
+• NOTE : SERTAK KAN BUKTI TF KEPADA OWNER`
         dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
  
@@ -1844,7 +1844,7 @@ case 'buttonwibu':
 *=> ${prefix}storyanime*
 *=> ${prefix}otakuongoing*
 *=> ${prefix}nhentai *code*
-*=> ${prefix}nekopoi _link_*
+*=> ${prefix}nekopoi* _link_
 *=> ${prefix}nekopoi3d*
 *=> ${prefix}nekopoicosplay*
 *=> ${prefix}nekopoisearch*`
@@ -1915,7 +1915,7 @@ case 'buttonown':
               try {
               if (!isUrl(q)) return reply('Linknya?')
               reply(mess.wait)
-              res = await axios.get(`https://api.lolhuman.xyz/api/instagram2?apikey=${setting.lolkey}&url=${args[0]}`)
+              res = await axios.get(`https://api.lolhuman.xyz/api/instagram2?apikey=najisbaperanRw&url=${args[0]}`)
               data = res.data.result
               for (let i = 0; i < data.media.length; i++) {
               sendMediaURL(from, data.media[i], data.caption, {thumbnail: Buffer.alloc(0)})
@@ -1930,7 +1930,7 @@ case 'buttonown':
               try {
               if (!q) return reply('Linknya?')
               reply(mess.wait)
-              res = await axios.get(`https://api.zeks.xyz/api/ig?apikey=${setting.zekskey}&url=${args[0]}`)
+              res = await axios.get(`https://api.zeks.xyz/api/ig?apikey=NinoWangy&url=${args[0]}`)
               for(let i = 0; i < res.data.result.length; i++) {
               sendMediaURL(from, res.data.result[i].url, `┏┉⌣ ┈̥-̶̯͡..̷̴✽̶┄┈┈┈┈┈┈┈┈┈┈┉┓
 ┆ *INSTAGRAM MEDIA*
@@ -1959,7 +1959,7 @@ case 'buttonown':
               if (!q) return reply('Link Yang Mana? ')
               if (!q.includes('soundcloud')) return reply(mess.error.Iv)
               reply(mess.wait)
-              anu = await fetchJson(`https://api.lolhuman.xyz/api/soundcloud?apikey=${setting.lolkey}&url=${q}`)
+              anu = await fetchJson(`https://api.lolhuman.xyz/api/soundcloud?apikey=najisbaperanRw&url=${q}`)
              .then((data) => { sendMediaURL(from, data.result, mek) })
              .catch((err) => { reply(String(err)) })
               break
@@ -2143,7 +2143,7 @@ case 'tiktok':
       case 'tiktokaudio':
              if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
              ini_link = args[0]
-             get_audio = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=${setting.lolkey}&url=${ini_link}`)
+             get_audio = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=najisbaperanRw&url=${ini_link}`)
              dha.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, quoted: mek })
              break
       case 'fb':
@@ -2181,7 +2181,7 @@ case 'tiktok':
       case 'ssweb':
              if (args.length == 0) return reply(`Example: ${prefix + command} https://nekopoi.care/`)
              ini_link = args[0]
-             ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/ssweb?apikey=${setting.lolkey}&url=${ini_link}`)
+             ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/ssweb?apikey=najisbaperanRw&url=${ini_link}`)
              await dha.sendMessage(from, ini_buffer, image, { quoted: mek })
              break
        case 'nhentaipdf':
@@ -2190,13 +2190,13 @@ case 'tiktok':
              if (isNaN(Number(args[0]))) return await reply(mess.wrongFormat)
              try {
              henid = args[0]
-             get_result = await fetchJson(`https://api.lolhuman.xyz/api/nhentai/${henid}?apikey=${setting.lolkey}`)
+             get_result = await fetchJson(`https://api.lolhuman.xyz/api/nhentai/${henid}?apikey=najisbaperanRw`)
              get_result = get_result.result
              get_info = get_result.info
              teks = `\n${get_result.title_romaji}\n\n${get_result.title_native}\n\nCharacter : ${get_info.characters.join(", ")}\n`
              ini_image = await getBuffer(get_result.image[0])
              dha.sendMessage(from, ini_image, image, { caption: teks, quoted: mek })
-             anu = await fetchJson(`https://api.lolhuman.xyz/api/nhentaipdf/${henid}?apikey=${setting.lolkey}`)
+             anu = await fetchJson(`https://api.lolhuman.xyz/api/nhentaipdf/${henid}?apikey=najisbaperanRw`)
              pdf = await getBuffer(anu.result)
              dha.sendMessage(from, pdf, document, { quoted: mek, mimetype: Mimetype.pdf, filename: `${get_result.title_romaji}.pdf`, thumbnail: ini_image })
              } catch (e) {
@@ -2209,7 +2209,7 @@ case 'tiktok':
               if (args.length == 0) return reply(`Example: ${prefix + command} 344253`)
               reply(mess.wait)
               henid = args[0]
-              get_result = await fetchJson(`https://api.lolhuman.xyz/api/nhentai/${henid}?apikey=${setting.lolkey}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/nhentai/${henid}?apikey=najisbaperanRw`)
               get_result = get_result.result
               ini_txt = `Title Romaji : ${get_result.title_romaji}\n`
               ini_txt += `Title Native : ${get_result.title_native}\n`
@@ -2230,7 +2230,7 @@ case 'tiktok':
               if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
               reply(mess.wait)
               query = args.join(" ")
-              get_result = await fetchJson(`https://api.lolhuman.xyz/api/manga?apikey=${setting.lolkey}&query=${query}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/manga?apikey=najisbaperanRw&query=${query}`)
               get_result = get_result.result
               ini_txt = `Id : ${get_result.id}\n`
               ini_txt += `Id MAL : ${get_result.idMal}\n`
@@ -2277,7 +2277,7 @@ case 'tiktok':
              if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
              reply(mess.wait)
              query = args.join(" ")
-             get_result = await fetchJson(`https://api.lolhuman.xyz/api/anime?apikey=${setting.lolkey}&query=${query}`)
+             get_result = await fetchJson(`https://api.lolhuman.xyz/api/anime?apikey=najisbaperanRw&query=${query}`)
              get_result = get_result.result
              ini_txt = `Id : ${get_result.id}\n`
              ini_txt += `Id MAL : ${get_result.idMal}\n`
@@ -2309,7 +2309,7 @@ case 'tiktok':
              if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
              reply(mess.wait)
              query = args.join(" ")
-             get_result = await fetchJson(`https://api.lolhuman.xyz/api/kusonimesearch?apikey=${setting.lolkey}&query=${query}`)
+             get_result = await fetchJson(`https://api.lolhuman.xyz/api/kusonimesearch?apikey=najisbaperanRw&query=${query}`)
              get_result = get_result.result
              ini_txt = `Title : ${get_result.title}\n`
              ini_txt += `Japanese : ${get_result.japanese}\n`
@@ -2337,7 +2337,7 @@ case 'tiktok':
               if (args.length == 0) return reply(`Example: ${prefix + command} Gotoubun No Hanayome`)
               reply(mess.wait)
               query = args.join(" ")
-              get_result = await fetchJson(`https://api.lolhuman.xyz/api/otakudesusearch?apikey=${setting.lolkey}&query=${query}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/otakudesusearch?apikey=najisbaperanRw&query=${query}`)
               get_result = get_result.result
               ini_txt = `Title : ${get_result.title}\n`
               ini_txt += `Japanese : ${get_result.japanese}\n`
@@ -2370,7 +2370,7 @@ case 'tiktok':
        case 'nekopoi':
               if (args.length == 0) return reply(`Example: ${prefix + command} https://nekopoi.care/isekai-harem-monogatari-episode-4-subtitle-indonesia/`)
               ini_url = args[0]
-              get_result = await fetchJson(`https://api.lolhuman.xyz/api/nekopoi?apikey=${setting.lolkey}&url=${ini_url}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/nekopoi?apikey=najisbaperanRw&url=${ini_url}`)
               get_result = get_result.result
               ini_txt = `\`\`\`き⃟🦈 Title : ${get_result.anime}\`\`\`\n`
               ini_txt += `\`\`\`き⃟🦈 Porducers : ${get_result.producers}\`\`\`\n`
@@ -2391,7 +2391,7 @@ case 'tiktok':
        case 'nekopoisearch':
               if (args.length == 0) return reply(`Example: ${prefix + command} Isekai Harem`)
               query = args.join(" ")
-              get_result = await fetchJson(`https://api.lolhuman.xyz/api/nekopoisearch?apikey=${setting.lolkey}&query=${query}`)
+              get_result = await fetchJson(`https://api.lolhuman.xyz/api/nekopoisearch?apikey=najisbaperanRw&query=${query}`)
               get_result = get_result.result
               ini_txt = ""
               for (var x of get_result) {
@@ -2407,19 +2407,19 @@ case 'tiktok':
        case 'megumin':
        case 'wallnime':
               reply(mess.wait)
-              getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=${setting.lolkey}`).then((gambar) => {
+              getBuffer(`https://api.lolhuman.xyz/api/random/${command}?apikey=najisbaperanRw`).then((gambar) => {
               dha.sendMessage(from, gambar, image, { quoted: mek, thumbnail: Buffer.alloc(0) })
 })
               break
        
        case 'hentai':
-              getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/hentai?apikey=${setting.lolkey}`).then((gambar) => {
+              getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/hentai?apikey=najisbaperanRw`).then((gambar) => {
               dha.sendMessage(from, gambar, image, { quoted: mek })
 }) 
               break
        case 'storyanime':
               reply(mess.wait)
-              anu = await fetchJson(`https://lolhuman.herokuapp.com/api/storynime?apikey=${setting.lolkey}`)
+              anu = await fetchJson(`https://api.lolhuman.xyz/api/storynime?apikey=najisbaperanRw`)
               buffer = await getBuffer(anu.result)
               dha.sendMessage(from, buffer, video, { quoted: mek })
               break
@@ -2564,7 +2564,7 @@ case 'play2':
 				  if (args.length < 1) return reply('*Masukan judul nya?*')
                 reply('Loading.... ')
 				play = args.join(" ")
-				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?q=${play}&apikey=${setting.zekskey}`)
+				anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?q=${play}&apikey=NinoWangy`)
 				if (anu.error) return reply(anu.error)
 				infomp3 = `*「 PLAY VIDEO 」*
 				
@@ -2599,7 +2599,7 @@ Source : ${anu.result.source}
         case 'pinterest':
                     if (args.length == 0) return reply(`Example: ${prefix + command} loli kawaii`)
                     query = args.join(" ")
-                    ini_url = await fetchJson(`https://api.lolhuman.xyz/api/pinterest?apikey=${setting.lolkey}&query=${query}`)
+                    ini_url = await fetchJson(`https://api.lolhuman.xyz/api/pinterest?apikey=najisbaperanRw&query=${query}`)
                     ini_url = ini_url.result
                     ini_buffer = await getBuffer(ini_url)
                     await dha.sendMessage(from, ini_buffer, image, { quoted: mek })
@@ -2609,7 +2609,7 @@ Source : ${anu.result.source}
                if (args.length == 0) return reply(`Kirim perintah *${prefix}shopee [ query ]*\nContoh : ${prefix}shopee sepatu`)
                query = args.join(" ")
                reply(mess.wait)
-               get_data = await fetchJson(`https://api.zeks.xyz/api/shopee?apikey=${setting.zekskey}&q=${query}`)
+               get_data = await fetchJson(`https://api.zeks.xyz/api/shopee?apikey=NinoWangy&q=${query}`)
                get_data = get_data.data
                teks = `┏┉⌣ ┈̥-̶̯͡..̷̴✽̶┄┈┈┈┈┈┈┈┈┈┈┉┓
 ┆ *SHOPEE*
@@ -2637,7 +2637,7 @@ teks += `\`\`\`き⃟🦈 Nama : ${get_data[i].name}\`\`\`
               if (args.length == 0) return reply(`Kirim perintah *${prefix}playstore [ apk ]*\nContoh : ${prefix}playstore pubg`)
               query = args.join(" ")
               reply(mess.wait)
-              get_result = await fetchJson(`https://api.zeks.xyz/api/sgplay?apikey=${setting.zekskey}&q=${query}`)
+              get_result = await fetchJson(`https://api.zeks.xyz/api/sgplay?apikey=NinoWangy&q=${query}`)
               get_result = get_result.result
               teks = `┏┉⌣ ┈̥-̶̯͡..̷̴✽̶┄┈┈┈┈┈┈┈┈┈┈┉┓
 ┆ *PLAYSTORE*
@@ -2711,18 +2711,6 @@ a += `\`\`\`き⃟🦈 Title : ${i.title}\`\`\`
                throw err
 })
                break
-                case 'asupan':
-     ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/asupan?apikey=PsycoBot`)
-     get_result = ini_result.result
-        ini_vid = await getBuffer(get_result.url)
-     dha.sendMessage(from, ini_vid, video, {mimetype: 'video/mp4',quoted:mek})
-     break
-        case 'santuy':
-     ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/asupan/santuy?apikey=PsycoBot`)
-     get_result = ini_result.result
-        ini_vid = await getBuffer(get_result.url)
-     dha.sendMessage(from, ini_vid, video, {mimetype: 'video/mp4',quoted:mek})
-     break
      case 'hijab':
      ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/asupan/hijaber?apikey=PsycoBot`)
      get_result = ini_result.result
@@ -2753,7 +2741,7 @@ a += `\`\`\`き⃟🦈 Title : ${i.title}\`\`\`
         ini_vid = await getBuffer(get_result.url)
      dha.sendMessage(from, ini_vid, video, {mimetype: 'video/mp4',quoted:mek})
      break
-     case 'cecan':
+     case 'asupan':
      ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/asupan/cecan?apikey=PsycoBot`)
      get_result = ini_result.result
         ini_vid = await getBuffer(get_result.url)
@@ -2785,7 +2773,7 @@ a += `\`\`\`き⃟🦈 Title : ${i.title}\`\`\`
               } catch {
               profilePic = errorImg
 }
-              buffer = await getBuffer(`https://lolhuman.herokuapp.com/api/rank?apikey=${setting.lolkey}&img=${profilePic}&background=https://telegra.ph/file/443b6600636aed1d94acd.jpg&username=${encodeURI(pushname)}&level=${userLevel}&ranking=${Number(userRank)}&currxp=${userXp}&xpneed=${requiredXp}`)
+              buffer = await getBuffer(`https://api.lolhuman.xyz/api/rank?apikey=najisbaperanRw&img=${profilePic}&background=https://telegra.ph/file/443b6600636aed1d94acd.jpg&username=${encodeURI(pushname)}&level=${userLevel}&ranking=${Number(userRank)}&currxp=${userXp}&xpneed=${requiredXp}`)
               teks = `*「 LEVEL 」*\n\n➸ *Nama :* ${pushname}\n➸ *Xp :* ${userXp} / ${requiredXp}\n➸ *Level :* ${userLevel}\n➸ *Role*: *${role}*\n\n*Note : Kumpulin Xp Jika Ingin Menaikkan Level*`
               dha.sendMessage(from, buffer, image, { caption: teks, quoted: mek})
               break
@@ -2853,7 +2841,7 @@ a += `\`\`\`き⃟🦈 Title : ${i.title}\`\`\`
 
 case 'kbbi':
 if (args.length == 0) return reply(`Nama Yg Mau Dicari Mana Tod\nContoh: ${prefix + command} kursi`)
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/kbbi?apikey=${setting.lolkey}&query=${args.join(" ")}`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/kbbi?apikey=najisbaperanRw&query=${args.join(" ")}`)
 lila = get_result.result
 ini_txt = `\`\`\`Kata : ${lila[0].nama}\`\`\`\n`
 ini_txt += `\`\`\`Kata Dasar : ${lila[0].kata_dasar}\`\`\`\n`
@@ -2873,7 +2861,7 @@ if (args.length == 0) return reply(`Nama Kotanya Mana Tod\nContoh: ${prefix + co
 pauls = args.join(" ")
 teks1 = pauls.split("-")[0].trim()
 teks2 = pauls.split("-")[1].trim()
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/jaraktempuh?apikey=${setting.lolkey}&kota1=${teks1}&kota2=${teks2}`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/jaraktempuh?apikey=najisbaperanRw&kota1=${teks1}&kota2=${teks2}`)
 x = get_result.result
 ini_txt = `Informasi Jarak dari ${teks1} ke ${teks2} :\n\n`
 ini_txt += `\`\`\`◪ Asal :\`\`\` ${x.from.name}\n`
@@ -2896,7 +2884,7 @@ break
 case 'wikipedia':
 if (args.length == 0) return reply(`Nama Yg Mau Di Cari Mana Tod\nContoh: ${prefix + command} Tahu`)
 query = args.join(" ")
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/wiki?apikey=${setting.lolkey}&query=${query}`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/wiki?apikey=najisbaperanRw&query=${query}`)
 get_result = get_result.result
 reply(get_result)
 break
@@ -2905,7 +2893,7 @@ if (args.length == 0) return reply(`Teks Yg Mau Di Translate Mana Tod\nContoh: $
 kode_negara = args[0]
 args.shift()
 ini_txt = args.join(" ")
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/translate/auto/${kode_negara}?apikey=${setting.lolkey}&text=${ini_txt}`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/translate/auto/${kode_negara}?apikey=najisbaperanRw&text=${ini_txt}`)
 get_result = get_result.result
 init_txt = `From : ${get_result.from}\n`
 init_txt += `To : ${get_result.to}\n`
@@ -2917,7 +2905,7 @@ break
 case 'jadwaltv':
 if (args.length == 0) return reply(`Nama Channel Nya Mana Tod\nContoh: ${prefix + command} SCTV`)
 channel = args[0]
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/jadwaltv/${channel}?apikey=${setting.lolkey}`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/jadwaltv/${channel}?apikey=najisbaperanRw`)
 get_result = get_result.result
 ini_txt = `Jadwal TV ${channel.toUpperCase()}\n`
 for (var x in get_result) {
@@ -2926,7 +2914,7 @@ ini_txt += `${x} - ${get_result[x]}\n`
 reply(ini_txt)
 break
 case 'infogempa':
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/infogempa?apikey=${setting.lolkey}`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/infogempa?apikey=najisbaperanRw`)
 get_result = get_result.result
 ini_txt = `Lokasi : ${get_result.lokasi}\n`
 ini_txt += `Waktu : ${get_result.waktu}\n`
@@ -2940,7 +2928,7 @@ break
 case 'cuaca':
 if (args.length == 0) return reply(`Nama Kotanya Mana Tod\nContoh: ${prefix + command} Temanggung`)
 daerah = args[0]
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/cuaca/${daerah}?apikey=${setting.lolkey}`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/cuaca/${daerah}?apikey=najisbaperanRw`)
 get_result = get_result.result
 ini_txt = `Tempat : ${get_result.tempat}\n`
 ini_txt += `Cuaca : ${get_result.cuaca}\n`
@@ -2954,7 +2942,7 @@ await dha.sendMessage(from, { degreesLatitude: get_result.latitude, degreesLongi
 reply(ini_txt)
 break
 case 'covidindo':
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/corona/indonesia?apikey=${setting.lolkey}`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/corona/indonesia?apikey=najisbaperanRw`)
 get_result = get_result.result
 ini_txt = `Positif : ${get_result.positif}\n`
 ini_txt += `Sembuh : ${get_result.sembuh}\n`
@@ -2963,7 +2951,7 @@ ini_txt += `Meninggal : ${get_result.meninggal}`
 reply(ini_txt)
 break
 case 'covidglobal':
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/corona/global?apikey=${setting.lolkey}`)
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/corona/global?apikey=najisbaperanRw`)
 get_result = get_result.result
 ini_txt = `Positif : ${get_result.positif}\n`
 ini_txt += `Sembuh : ${get_result.sembuh}\n`
@@ -2977,7 +2965,7 @@ break
               if (args.length == 0) return reply(`Example: ${prefix + command} dha-chan02`)
               reply(mess.wait)
               username = args[0]
-              ini_result = await fetchJson(`https://api.lolhuman.xyz/api/github/${username}?apikey=${setting.lolkey}`)
+              ini_result = await fetchJson(`https://api.lolhuman.xyz/api/github/${username}?apikey=najisbaperanRw`)
               ini_result = ini_result.result
               ini_buffer = await getBuffer(ini_result.avatar)
               ini_txt = `┏┉⌣ ┈̥-̶̯͡..̷̴✽̶┄┈┈┈┈┈┈┈┈┈┈┉┓
@@ -3000,7 +2988,7 @@ break
              if (args.length == 0) return reply(`Example: ${prefix + command} dha.chan26`)
              reply(mess.wait)
              username = args[0]
-             ini_result = await fetchJson(`https://api.lolhuman.xyz/api/stalkig/${username}?apikey=${setting.lolkey}`)
+             ini_result = await fetchJson(`https://api.lolhuman.xyz/api/stalkig/${username}?apikey=najisbaperanRw`)
              ini_result = ini_result.result
              ini_buffer = await getBuffer(ini_result.photo_profile)
              ini_txt = `┏┉⌣ ┈̥-̶̯͡..̷̴✽̶┄┈┈┈┈┈┈┈┈┈┈┉┓
@@ -3022,7 +3010,7 @@ break
              if (args.length == 0) return reply(`Example: ${prefix + command} marz.hiatus`)
              reply(mess.wait)
              stalk_toktok = args[0]
-             get_result = await fetchJson(`http://lolhuman.herokuapp.com/api/stalktiktok/${stalk_toktok}?apikey=${setting.lolkey}`)
+             get_result = await fetchJson(`http://lolhuman.herokuapp.com/api/stalktiktok/${stalk_toktok}?apikey=najisbaperanRw`)
              get_result = get_result.result
              pp_tt = await getBuffer(get_result.user_picture)
              ini_txt = `┏┉⌣ ┈̥-̶̯͡..̷̴✽̶┄┈┈┈┈┈┈┈┈┈┈┉┓
@@ -3045,7 +3033,7 @@ break
               if (args.length == 0) return reply(`Kirim perintah *${prefix}iguser [ username ]*\nContoh : ${prefix}iguser jessnolimit`)
               query = args.join(" ")
               reply(mess.wait)
-              get_result = await fetchJson(`https://api.zeks.xyz/api/iguser?apikey=${setting.zekskey}&q=${query}`)
+              get_result = await fetchJson(`https://api.zeks.xyz/api/iguser?apikey=NinoWangy&q=${query}`)
               get_result = get_result.result
               teks = `*「 INSTAGRAM USER 」*\n\n*Hasil Pencarian : ${query}*\n\n`
               for(let i = 0; i < get_result.length; i++) {
@@ -3061,7 +3049,7 @@ break
 case 'ffstalk':
 if (args.length == 0) return reply(`Idnya mana kak?`)
                     ff_id = args[0]
-                    get_result = await fetchJson(`https://lolhuman.herokuapp.com/api/freefire/${ff_id}?apikey=${setting.lolkey}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/freefire/${ff_id}?apikey=najisbaperanRw`)
                     reply(`nih kak`)
                     break      
 //------------------< Sticker/Tools >-------------------
@@ -3129,7 +3117,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
        case 'telestiker':
               if (!q) return reply(`Example: ${prefix + command} https://t.me/addstickers/LINE_Menhera_chan_ENG`)
               reply(mess.wait)
-              ini_url = await fetchJson(`https://api.lolhuman.xyz/api/telestick?apikey=${setting.lolkey}&url=${args[0]}`)
+              ini_url = await fetchJson(`https://api.lolhuman.xyz/api/telestick?apikey=najisbaperanRw&url=${args[0]}`)
               ini_sticker = ini_url.result.sticker
               reply('Sending '+ ini_sticker.length +' stickers...')
               for (sticker_ in ini_sticker) {
@@ -3146,7 +3134,7 @@ if (args.length == 0) return reply(`Idnya mana kak?`)
               } catch {
               emoji = encodeURI(emoji)
  }
-              ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/smoji/${emoji}?apikey=${setting.lolkey}`)
+              ini_buffer = await getBuffer(`https://api.lolhuman.xyz/api/smoji/${emoji}?apikey=najisbaperanRw`)
               await dha.sendMessage(from, ini_buffer, sticker, { quoted: mek })
               break
 case 'ttp':
@@ -3429,7 +3417,7 @@ break
                 case 'xnxx':
                     if (args.length == 0) return reply(`Contoh: ${prefix + command} https://www.xnxx.com/video-uy5a73b/mom_is_horny_-_brooklyn`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/xnxx?apikey=${setting.lolkey}&url=${query}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/xnxx?apikey=najisbaperanRw&url=${query}`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Duration : ${get_result.duration}\n`
@@ -3451,7 +3439,7 @@ break
         case 'xnxxsearch':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Japanese`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=${setting.lolkey}&query=${query}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/xnxxsearch?apikey=najisbaperanRw&query=${query}`)
                     get_result = get_result.result
                     ini_txt = ""
                     for (var x of get_result) {
@@ -4511,7 +4499,7 @@ case 'caripesan':  //by ANU TEAM
        case 'lolkey':
        case 'cekapikey':
               if (args.length < 1) return reply(`Ketik ${prefix}lolkey [Apikeynya]`) 
-              anu = await fetchJson(`https://lolhuman.herokuapp.com/api/checkapikey?apikey=${q}`)
+              anu = await fetchJson(`https://api.lolhuman.xyz/api/checkapikey?apikey=${q}`)
               teks = `*YOUR APIKEY*\n\n➸ Ussername= ${anu.result.username}\n➸ Request= ${anu.result.requests}\n➸ Today= ${anu.result.today}\n➸ Akun Type= ${anu.result.account_type}\n➸ Expired= ${anu.result.expired}\n➸ API = https://lolhuman.herokuapp.com`
               dha.sendMessage(from, teks, text, {quoted: troli})
               break
@@ -4534,7 +4522,7 @@ case 'caripesan':  //by ANU TEAM
 case 'kisahnabi':
                 if (args.length == 0) return reply(`Example: ${prefix + command} Muhammad`)
                     query = args.join(" ")
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/kisahnabi/${query}?apikey=${setting.lolkey}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/kisahnabi/${query}?apikey=najisbaperanRw`)
                     get_result = get_result.result
                     ini_txt = `Name : ${get_result.name}\n`
                     ini_txt += `Lahir : ${get_result.thn_kelahiran}\n`
@@ -4546,7 +4534,7 @@ case 'kisahnabi':
 case 'jadwalsholat':
                     if (args.length == 0) return reply(`Example: ${prefix + command} Yogyakarta`)
                     daerah = args.join(" ")
-get_result = await fetchJson(`http://api.lolhuman.xyz/api/sholat/${daerah}?apikey=${setting.lolkey}`)
+get_result = await fetchJson(`http://api.lolhuman.xyz/api/sholat/${daerah}?apikey=najisbaperanRw`)
                     get_result = get_result.result
                     ini_txt = `Wilayah : ${get_result.wilayah}\n`
                     ini_txt += `Tanggal : ${get_result.tanggal}\n`
@@ -4562,7 +4550,7 @@ get_result = await fetchJson(`http://api.lolhuman.xyz/api/sholat/${daerah}?apike
                     reply(ini_txt)
                     break  
              case 'listsurah':
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/quran?apikey=${setting.lolkey}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/quran?apikey=najisbaperanRw`)
                     get_result = get_result.result
                     ini_txt = 'List Surah:\n'
                     for (var x in get_result) {
@@ -4572,7 +4560,7 @@ get_result = await fetchJson(`http://api.lolhuman.xyz/api/sholat/${daerah}?apike
                     break                                              
 case 'alquran':
                     if (args.length < 1) return reply(`Example: ${prefix + command} 18 or ${prefix + command} 18/10 or ${prefix + command} 18/1-10`)
-                    urls = `http://api.lolhuman.xyz/api/quran/${args[0]}?apikey=${setting.lolkey}`
+                    urls = `http://api.lolhuman.xyz/api/quran/${args[0]}?apikey=najisbaperanRw`
                     quran = await fetchJson(urls)
                     result = quran.result
                     ayat = result.ayat
@@ -4590,7 +4578,7 @@ case 'alquran':
                     reply(ini_txt)
                     break
 case 'asmaulhusna':
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/asmaulhusna?apikey=${setting.lolkey}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/asmaulhusna?apikey=najisbaperanRw`)
                     get_result = get_result.result
                     ini_txt = `No : ${get_result.index}\n`
                     ini_txt += `Latin: ${get_result.latin}\n`
@@ -4602,29 +4590,28 @@ case 'asmaulhusna':
  case 'alquranaudio':
                     if (args.length == 0) return reply(`Example: ${prefix + command} 18 or ${prefix + command} 18/10`)
                     surah = args[0]
-                    ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/quran/audio/${surah}?apikey=${setting.lolkey}`)
+                    ini_buffer = await getBuffer(`http://api.lolhuman.xyz/api/quran/audio/${surah}?apikey=najisbaperanRw`)
                     dha.sendMessage(from, ini_buffer, audio, { quoted: mek, mimetype: Mimetype.mp4Audio })      
                     break                                         
 //------------------< serti menu >-------------------   
 case 'sertitolol': 				
 				if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh ${prefix}tololserti KURR GAMTENG`)
 				ct = body.slice(12)
-				zhain = await getBuffer(`https://api.lolhuman.xyz/api/toloserti?apikey=${setting.lolkey}&name=${ct}`)
+				zhain = await getBuffer(`https://api.lolhuman.xyz/api/toloserti?apikey=najisbaperanRw&name=${ct}`)
 				dha.sendMessage(from, zhain, image, { quoted: mek, caption: 'Nih Dah Jadi' })
 				break
 				
 				case 'sertiff':
  	          if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh: ${prefix}sertiff PINO GANTENG`)
       teksnya = args.join(" ")
-      ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/epep?text=${teksnya}&apikey=${setting.psyco}`)
+      ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/epep?text=${teksnya}&apikey=PsycoBot`)
       get_result = ini_result.result
          ini_img = await getBuffer(get_result.results)
       dha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih Dah Jadi'})
       break				
 //------------------< cerita menu >-------------------
 case 'cerpen':
-		
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/cerpen?apikey=${setting.lolkey}`)
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/cerpen?apikey=najisbaperanRw`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Creator : ${get_result.creator}\n`
@@ -4632,7 +4619,8 @@ case 'cerpen':
                     reply(ini_txt)
                     break
 case 'ceritahoror':
-                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/ceritahoror?apikey=${setting.lolkey}`)
+case 'horor':
+                    get_result = await fetchJson(`http://api.lolhuman.xyz/api/ceritahoror?apikey=najisbaperanRw`)
                     get_result = get_result.result
                     ini_txt = `Title : ${get_result.title}\n`
                     ini_txt += `Desc : ${get_result.desc}\n`
@@ -4642,14 +4630,14 @@ case 'ceritahoror':
                      break 
 //------------------(KATA KATA MENU)---------+--------
      case 'quotes':
-                    quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=${setting.lolkey}`)
+                    quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotes?apikey=najisbaperanRw`)
                     quotes = quotes.result
                     author = quotes.by
                     quotes = quotes.quote
                     reply(`_${quotes}_\n\n*― ${author}*`)
                     break
                 case 'quotesanime':
-                    quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotesnime?apikey=${setting.lolkey}`)
+                    quotes = await fetchJson(`https://api.lolhuman.xyz/api/random/quotesnime?apikey=najisbaperanRw`)
                     quotes = quotes.result
                     quote = quotes.quote
                     char = quotes.character
@@ -4658,14 +4646,14 @@ case 'ceritahoror':
                     reply(`_${quote}_\n\n*― ${char}*\n*― ${anime} ${episode}*`)
                     break
 case 'quotesdilan':
-                    quotedilan = await fetchJson(`https://api.lolhuman.xyz/api/quotes/dilan?apikey=${setting.lolkey}`)
+                    quotedilan = await fetchJson(`https://api.lolhuman.xyz/api/quotes/dilan?apikey=najisbaperanRw`)
                     reply(quotedilan.result)
                     break   
                case 'faktaunik':
                 case 'katabijak':
                 case 'pantun':
                 case 'bucin':
-                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/random/${command}?apikey=${setting.lolkey}`)
+                    get_result = await fetchJson(`https://api.lolhuman.xyz/api/random/${command}?apikey=najisbaperanRw`)
                     reply(get_result.result)
                     break                                         
 //------------------< Maker Menu >--------------------   
@@ -4673,34 +4661,34 @@ case 'tahta':
          if (args.length == 0) return reply(`Usage: ${prefix} + command} text\nExample: ${prefix + command} DHA`) 
          teks = args.join(" ") 
          reply('SABAR YA SAYANG....') 
-         buffer = await getBuffer(`https://api.lolhuman.xyz/api/hartatahta?apikey=${setting.lolkey}&text=${teks}`) 
+         buffer = await getBuffer(`https://api.lolhuman.xyz/api/hartatahta?apikey=najisbaperanRw&text=${teks}`) 
          dha.sendMessage(from, buffer, image, {quoted: ftoko, caption : 'ini hasilnya kak....'})
          break    
 case 'pornhub':
          if (args.length == 0) return reply(`Contoh: ${prefix + command} PSYCOBOTZ`)
          txt1 = args[0]
          txt2 = args[1]
-         ini_anu = await getBuffer(`http://api.lolhuman.xyz/api/textprome2/pornhub?apikey=${setting.lolkey}&text1=${txt1}&text2=${txt2}`)
+         ini_anu = await getBuffer(`http://api.lolhuman.xyz/api/textprome2/pornhub?apikey=najisbaperanRw&text1=${txt1}&text2=${txt2}`)
         dha.sendMessage(from, ini_anu, image, {quoted: ftoko})
         break
 case 'cup':          
         if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
         ini_txt = args.join(" ")
-        getBuffer(`https://api.lolhuman.xyz/api/photooxy1/cup?apikey=${setting.lolkey}&text=${ini_txt}`).then((gambar) => {
+        getBuffer(`https://api.lolhuman.xyz/api/photooxy1/cup?apikey=najisbaperanRw&text=${ini_txt}`).then((gambar) => {
         dha.sendMessage(from, gambar, image, { quoted: troli })
                     })
                     break
 case 'coffe':          
         if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
         ini_txt = args.join(" ")
-        getBuffer(`https://api.lolhuman.xyz/api/photooxy1/coffe?apikey=${setting.lolkey}&text=${ini_txt}`).then((gambar) => {
+        getBuffer(`https://api.lolhuman.xyz/api/photooxy1/coffe?apikey=najisbaperanRw&text=${ini_txt}`).then((gambar) => {
         dha.sendMessage(from, gambar, image, { quoted: troli, caption : 'jangan lupa bayar 15.000' })
                     })
                     break
          case 'transformer':
  	          if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh: ${prefix}sertiff PINO GANTENG`)
       teksnya = args.join(" ")
-      ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/transformer?text=${teksnya}&apikey=${setting.psyco}`)
+      ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/transformer?text=${teksnya}&apikey=PsycoBot`)
       get_result = ini_result.result
          ini_img = await getBuffer(get_result.results)
       dha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih Dah Jadi'})
@@ -4708,7 +4696,7 @@ case 'coffe':
                 case 'cup1':        
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     ini_txt = args.join(" ")
-                    getBuffer(`https://api.lolhuman.xyz/api/photooxy1/cup1?apikey=${setting.lolkey}&text=${ini_txt}`).then((gambar) => {
+                    getBuffer(`https://api.lolhuman.xyz/api/photooxy1/cup1?apikey=najisbaperanRw&text=${ini_txt}`).then((gambar) => {
                         dha.sendMessage(from, gambar, image, { quoted: troli })
                     })
                     break   
@@ -4745,7 +4733,7 @@ case 'coffe':
                 case 'freefire':
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     ini_txt = args.join(" ")
-                    getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=${setting.lolkey}&text=${ini_txt}`).then((gambar) => {
+                    getBuffer(`https://api.lolhuman.xyz/api/ephoto1/${command}?apikey=najisbaperanRw&text=${ini_txt}`).then((gambar) => {
                     dha.sendMessage(from, gambar, image, { quoted: ftoko })
                     })
                     break                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
