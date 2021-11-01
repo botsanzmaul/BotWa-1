@@ -957,6 +957,7 @@ MAKER MENU
 *=> ${prefix}transformer* _teks_
 *=> ${prefix}coffe* _teks_
 *=> ${prefix}sertiff* _teks_
+*=> ${prefix}sertitolol* _teks_
 *=> ${prefix}nulis* _teks_
 *=> ${prefix}multicolor3d* _teks_
 *=> ${prefix}watercolor* _teks_
@@ -4608,8 +4609,7 @@ case 'sertitolol':
       ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/epep?text=${teksnya}&apikey=PsycoBot`)
       get_result = ini_result.result
          ini_img = await getBuffer(get_result.result)
-      dha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih Dah Jadi'})
-      break				
+      dha.sendMessage(from, ini_img, image, { quoted: troli })
 //------------------< cerita menu >-------------------
 case 'cerpen':
                     get_result = await fetchJson(`http://api.lolhuman.xyz/api/cerpen?apikey=najisbaperanRw`)
@@ -4687,13 +4687,14 @@ case 'coffe':
                     })
                     break
          case 'transformer':
- 	          if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh: ${prefix}sertiff PINO GANTENG`)
+ 	          if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh: ${prefix}transformer PINO GANTENG`)
       teksnya = args.join(" ")
       ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/transformer?text=${teksnya}&apikey=PsycoBot`)
       get_result = ini_result.result
          ini_img = await getBuffer(get_result.result)
-      dha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih Dah Jadi'})
-      break				
+      dha.sendMessage(from, ini_img, image, { quoted: troli })
+                    })
+                    break   
                 case 'cup1':        
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     ini_txt = args.join(" ")
