@@ -44,7 +44,7 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM')
 const Exif = require('./lib/exif');
 const exif = new Exif();
 
-const { downloadMenu, infoMenu, gameMenu, groupMenu, funMenu, wibuMenu, ownerMenu, stickerMenu, otherMenu, rulesBot, islamMenu, sertiMenu, ceritaMenu, makerMenu,dewasaMenu, toolsMenu} = require('./message/help.js')
+const { downloadMenu, infoMenu, gameMenu, groupMenu, funMenu, wibuMenu, ownerMenu, stickerMenu, otherMenu, rulesBot, iklanBot, islamMenu, sertiMenu, ceritaMenu, makerMenu,dewasaMenu, toolsMenu} = require('./message/help.js')
 const { getBuffer, getGroupAdmins, getRandom, runtime, sleep } = require('./lib/myfunc')
 const { fetchJson, getBase64, kyun, createExif } = require('./lib/fetch')
 const { color, bgcolor } = require('./lib/color')
@@ -407,7 +407,7 @@ module.exports = dha = async (dha, mek) => {
           let authorname = dha.contacts[from] != undefined ? dha.contacts[from].vname || dha.contacts[from].notify : undefined	
           if (authorname != undefined) { } else { authorname = groupName }	
           function addMetadata(packname, author) {	
-          if (!packname) packname = 'WABot'; if (!author) author = 'Bot';author = author.replace(/[^a-zA-Z0-9]/g, '');	
+          if (!packname) packname = 'PsycoBOT'; if (!author) author = 'Teh  Best';author = author.replace(/[^a-zA-Z0-9]/g, '');	
           let name = `${author}_${packname}`
           if (fs.existsSync(`./sticker/${name}.exif`)) return `./sticker/${name}.exif`
           const json = {	
@@ -555,7 +555,11 @@ function banChat() {
     }
 }
         
-        // Sewa
+if (m.mentionedJid.includes(dha.user.jid)) {
+dha.sendMessage(m.chat, { url: 'https://i.ibb.co/sFbdXfj/6984d8315885.webp' }, 'stickerMessage', { quoted: m, fileLength: 99999999999999 })
+} 
+
+                // Sewa
              _sewa.expiredCheck(dha, sewa)
              
         // MUTE
@@ -1709,7 +1713,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 *PSYCO SEWA BOT WA*
 FITUR:ANTILINK,WELCOME,ADD,KICK,DEMOTE,DAN MASIH BANYAK LAGI
 
-HARGA PERMANEN:~25k~ PROMO!!! *10K* MINAT? HUBUNGI OWNER`
+HARGA PERMANEN:~20k~ PROMO!!! *10K* MINAT? HUBUNGI OWNER`
               dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: mek, caption: teksnya })
               break             
 //------------------< bayar menu >-------------------  
@@ -1718,9 +1722,9 @@ gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
 teksnya = ` *「PAYMENT」*
 • GOPAY : https://telegra.ph/file/ffba186c9fd6f8c3e519f.jpg
 • PULSA : 085643260438
-• OVO : 088216185132
+• OVO     : 088216185132
 ━━━━━━━━━━━━━━━━━━━━
-• NOTE : SERTAK KAN BUKTI TF KEPADA OWNER`
+• NOTE : SERTA KAN BUKTI TF KEPADA OWNER`
         dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
  
@@ -4606,7 +4610,7 @@ case 'sertitolol':
       teksnya = args.join(" ")
       ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/epep?text=${teksnya}&apikey=PsycoBot`)
       get_result = ini_result.result
-         ini_img = await getBuffer(get_result.results)
+         ini_img = await getBuffer(get_result.result)
       dha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih Dah Jadi'})
       break				
 //------------------< cerita menu >-------------------
@@ -4690,7 +4694,7 @@ case 'coffe':
       teksnya = args.join(" ")
       ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/transformer?text=${teksnya}&apikey=PsycoBot`)
       get_result = ini_result.result
-         ini_img = await getBuffer(get_result.results)
+         ini_img = await getBuffer(get_result.result)
       dha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih Dah Jadi'})
       break				
                 case 'cup1':        
