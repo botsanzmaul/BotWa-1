@@ -4604,13 +4604,13 @@ case 'sertitolol':
 				break
 				
 				case 'sertiff':
- 	          if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh: ${prefix}sertiff PINO GANTENG`)
+      if (args.length < 1) return reply(`Usage: ${prefix + command} teks\nExample : ${prefix + command} Psyco BOTZ)
       teksnya = args.join(" ")
       ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/epep?text=${teksnya}&apikey=PsycoBot`)
       get_result = ini_result.result
          ini_img = await getBuffer(get_result.result)
-      dha.sendMessage(from, ini_img, image, { quoted: mek, caption: 'Nih Dah Jadi' })
-                   break
+      dha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih kak hasilnya'})
+      break
 //------------------< cerita menu >-------------------
 case 'cerpen':
                     get_result = await fetchJson(`http://api.lolhuman.xyz/api/cerpen?apikey=najisbaperanRw`)
@@ -4687,14 +4687,14 @@ case 'coffe':
         dha.sendMessage(from, gambar, image, { quoted: troli, caption : 'jangan lupa bayar 15.000' })
                     })
                     break
-         case 'transformer':
- 	          if (args.length < 1) return reply(`Textnya Mana Cuy?\n*Contoh: ${prefix}transformer PINO GANTENG`)
+                   case 'transformer':
+      if (args.length < 1) return reply(`Usage: ${prefix + command} teks\nExample : ${prefix + command} Psyco BOTZ)
       teksnya = args.join(" ")
       ini_result = await fetchJson(`https://api-psycho.herokuapp.com/api/maker/special/transformer?text=${teksnya}&apikey=PsycoBot`)
       get_result = ini_result.result
          ini_img = await getBuffer(get_result.result)
-      dha.sendMessage(from, ini_img, image, { quoted: mek, caption: 'Nih Dah Jadi' })
-                   break
+      dha.sendMessage(from, ini_img, image,{quoted :mek, caption : 'Nih kak hasilnya'})
+      break
                 case 'cup1':        
                     if (args.length == 0) return reply(`Example: ${prefix + command} LoL Human`)
                     ini_txt = args.join(" ")
