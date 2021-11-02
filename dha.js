@@ -82,7 +82,7 @@ let setting = JSON.parse(fs.readFileSync('./setting.json'))
 owner = setting.owner
 gamewaktu = setting.gamewaktu
 petik = '```'
-fake = 'CREATOR BOT\©PsycoBOTZ'//GANTI NAMA KAMU
+fake = 'CREATOR BOT\©PTraBotZ'//GANTI NAMA KAMU
 ban =[]
 
 // Database
