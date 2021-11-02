@@ -16,17 +16,17 @@ nocache('../message/group.js', module => console.log(color('[WATCH]', 'yellow'),
 
 const starts = async (dha = new WAConnection()) => {
 	dha.logger.level = 'warn'
-	console.log(color(figlet.textSync('PSYCO BOT', {
+	console.log(color(figlet.textSync('TRAA BOT', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
 		width: 80,
 		whitespaceBreak: false
 	}), 'cyan'))
-	console.log(color('[ SOURCE CODE INI DI RECODE OLEH NIZAM\nDENGAN AUTHOR PINO MODZ ]\n\n', 'orange'), color('\n======TERIMAKASIH BANYAK KEPADA======\n•MHANKBARBAR\n•HRUTZOFFC\n•KURRXD\n•NINO\n•IKYADS\n•KurrXd\n•PSYCO BOT\n•DAPPAUHUY\n•DAN CREATOR BOT LAINNYA', 'yellow'))
+	console.log(color('[ SOURCE CODE INI DI RECODE OLEH IYYAN\nDENGAN AUTHOR PINO MODZ ]\n\n', 'orange'), color('\n======TERIMAKASIH BANYAK KEPADA======\n•MHANKBARBAR\n•HRUTZOFFC\n•KURRXD\n•NINO\n•IKYADS\n•KurrXd\n•PSYCO BOT\n•DAPPAUHUY\n•DAN CREATOR BOT LAINNYA', 'yellow'))
 	console.log(color('\n\nSARAN JANGAN DI JUAL ULANG BRO\nKALAU ADA YG MINTA SURUH CHAT SAYA\nWA PSYCO BOT 6285643260438', 'pink'))
 	console.log(color('\n\n[ SAYA DOAKAN YANG SUBSCRIBE LANCAR, ANTI ERROR PAS RECODE DAN YG TIDAK, YA TAU LAH AKIBAT NYA', 'red'))
-	dha.browserDescription = ["PSYCO BOT", "Chrome", "3.0.0"];
+	dha.browserDescription = ["TRAAA BOT", "Chrome", "3.0.0"];
 
 	// Menunggu QR
 	dha.on('qr', () => {
