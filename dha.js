@@ -838,27 +838,20 @@ dha.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
 
         case 'menu':
         case 'help':
-        menu =`Hai Kak.....\n*${pushname}*\n\`\`\`Saya PSYCOBOTZ,SENANG BISA BERTEMU DENGANMU HARI INI\`\`\`
+        menu =`Hai Kak.....\n*${pushname}*\n\`\`\`Saya Yanz Bot,SENANG BISA BERTEMU DENGANMU HARI INI\`\`\`
         
 INFO PENGGUNA BOT
 ❏ NAMA : *${pushname}*
 ❏ API : *@${sender.split('@')[0]}*
-❏ STATUS : *${isOwner ? 'OWNER' : isPremium ? 'Premium' : 'Gratisan'}*
-❏ LIMIT : *${isPremium ? 'Unlimited' : `${gcount}`}*
 
 INFO BOT
-❏ NAMA : *PSYCOBOTZ*
-❏ API : @62856432604381
-❏ OWNER : *©NIZAM STORE*
-❏ API : *@62856432604381*
+❏ NAMA : *YanZ BoT*
+❏ API : wa.me/6289614412045
+❏ OWNER : *@iyyan18*
 ❏ AKTIF : *${runtime(process.uptime())}*
 ❏ BATERAI : *${baterai}%*
-❏ PREIFIX : *『${prefix}』*
-❏ WEB : https://api-psycho.herokuapp.com
 
    ━━━━━ ALL MENU ━━━━━
-
-INFO MENU
 *=> ${prefix}update*
 *=> ${prefix}iklan*
 *=> ${prefix}level*
@@ -1124,13 +1117,13 @@ FUN MENU
 *=> ${prefix}cekganteng*
 *=> ${prefix}cekcantik*
 _NOTE: FITUR MASIH TAHAP PENGEMBANGAN_`
-               buttons = [{buttonId: `${prefix}command`,buttonText:{displayText: 'ALL MENU'},type:1},{buttonId: `${prefix}rules`,buttonText:{displayText: 'RULES'},type:1},{buttonId:`${prefix}store`,buttonText:{displayText:'SHOP GAME'},type:1}]
+               buttons = [{buttonId: `${prefix}rules`,buttonText:{displayText: 'RULES'},type:1}]
 
                imageMsg = (await dha.prepareMessageMedia(fs.readFileSync(`./media/sherlynn.jpg`), 'imageMessage', {thumbnail: fs.readFileSync(`./media/sherlynn.jpg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: '\`\`\`Klik Baca Selengkapnya\`\`\`', imageMessage: imageMsg,
+               footerText: '\`\`\`Klik Baca Selengkapnya ^^\`\`\`', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -1706,7 +1699,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
               teksnya = `*── 「 PRICE LIST 」 ──*
 
-*PSYCO SEWA BOT WA*
+*Yanz SEWA BOT WA*
 FITUR:ANTILINK,WELCOME,ADD,KICK,DEMOTE,DAN MASIH BANYAK LAGI
 
 HARGA PERMANEN:~20k~ PROMO!!! *10K* MINAT? HUBUNGI OWNER`
@@ -1980,7 +1973,6 @@ case 'buttonown':
 }
              break
       case 'ytmp3':
-            if (!isPremium) return reply(mess.only.premium)
             if (args.length < 1) return reply('Link Nya Mana?')
             if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
             teks = args.join(' ')
@@ -2004,7 +1996,6 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
 })
             break
      case 'ytmp4':
-            if (!isPremium) return reply(mess.only.premium)
             if (args.length < 1) return reply('Link Nya Mana?')
             if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
             teks = args.join(' ')
@@ -2029,7 +2020,6 @@ _Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
             break
      case 'ytmp4hd':
      case 'ythd':
-            if (!isPremium) return reply(mess.only.premium)
             if (args.length === 0) return reply(`Kirim perintah */ytmp4 _linkYt_*`)
             let isLinkks2 = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
             if (!isLinkks2) return reply(mess.error.Iv)
@@ -2185,7 +2175,6 @@ case 'tiktok':
              await dha.sendMessage(from, ini_buffer, image, { quoted: mek })
              break
        case 'nhentaipdf':
-             if (!isPremium) return reply(mess.only.premium)
              if (args.length == 0) return reply(`Usage: ${prefix + command} query\nExample: ${prefix + command} 317986`)
              if (isNaN(Number(args[0]))) return await reply(mess.wrongFormat)
              try {
@@ -2205,7 +2194,6 @@ case 'tiktok':
 }
              break
        case 'nhentai':
-              if (!isPremium) return reply(mess.only.premium)
               if (args.length == 0) return reply(`Example: ${prefix + command} 344253`)
               reply(mess.wait)
               henid = args[0]
