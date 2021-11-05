@@ -1130,7 +1130,7 @@ _NOTE: FITUR MASIH TAHAP PENGEMBANGAN_`
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: '\`\`\`JIKA NEMU BUG/EROR SEGERA HUBUNGIN OWNER WA 62856432604381\`\`\`', imageMessage: imageMsg,
+               footerText: '\`\`\`Klik Baca Selengkapnya\`\`\`', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -1284,7 +1284,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 }
               gameAdd(sender, glimit)
               break
-       case 'tebaklagu':
+       case 'tebaklagu2':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaklagu.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
               get_result = await fetchJson(`https://api.xteam.xyz/game/tebaklagu?apikey=kurrxd09&id=4mFuArYRh3SO8jfffYLSER`)
@@ -1409,7 +1409,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
 }
               gameAdd(sender, glimit)
               break
-       case 'tebaklirik':
+       case 'tebaklirik2':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebaklirik.hasOwnProperty(sender.split('@')[0])) return reply("Masih ada soal yg belum terjawab")
               get_result = await fetchJson(`https://api.lolhuman.xyz/api/tebak/lirik?apikey=najisbaperanRw`)
@@ -1717,8 +1717,8 @@ case 'bayar':
 gopeynya = 'https://i.ibb.co/zxdsXDW/IMG-20211001-074948-766-min.png'
 teksnya = ` *「PAYMENT」*
 • GOPAY : https://telegra.ph/file/ffba186c9fd6f8c3e519f.jpg
-• PULSA : 085643260438
-• OVO     : 088216185132
+• PULSA : 081286800298
+• OVO     : 081286800298
 ━━━━━━━━━━━━━━━━━━━━
 • NOTE : SERTA KAN BUKTI TF KEPADA OWNER`
         dha.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
