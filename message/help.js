@@ -230,7 +230,7 @@ MINAT HIBUNGI OWNER
 wa.me/62856432604381
 
 YG MAU TOP UP GAME CHAT NO DI BAWAH
-wa.me/62856432604381`
+wa.me/6289614412045`
 }
 exports.infoMenu = (prefix) => {
 return `
@@ -353,7 +353,7 @@ return`
 
 
 NOTE:
-_ANAK DI BAWAH UMUR 18 TAHUN JANGAN GUNAKAN FITUR INI NANTI LU SANGE🗿_
+_ANAK DI BAWAH UMUR 18 TAHUN JANGAN GUNAKAN FITUR INI_
 `}
 exports.soundMenu = (prefix) => {
 return`
@@ -438,17 +438,6 @@ exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount,
 ❏ API : *@${sender.split('@')[0]}*
 ❏ STATUS : *${isOwner ? 'OWNER' : isPremium ? 'Premium' : 'Gratisan'}*
 ❏ LIMIT : *${isPremium ? 'Unlimited' : `${gcount}`}*
-
-𝗜𝗡𝗙𝗢 𝗕𝗢𝗧
-❏ NAMA : *PSYCO BOT*
-❏ API : @62856432604381
-❏ OWNER : *NIZAM STORE*
-❏ API : *@62856432604381*
-❏ TOTAL HIT : *${cmhit.length}x HIT*
-❏ AKTIF : *${runtime(process.uptime())}*
-❏ BATERAI : *${baterai}%*
-❏ PREIFIX : *『${prefix}』*
-❏ TOTAL FITUR : 300+
 
    ━━━━━ 𝗔𝗟𝗟 𝗠𝗘𝗡𝗨 ━━━━━
 
@@ -828,4 +817,4 @@ exports.allMenu = (prefix, cmhit, runtime, pushname, isOwner, isPremium, gcount,
 *▢ ${prefix}memeindo*
 *▢ ${prefix}darkjoke*
 
-©psycobotz`}
+©yanzbot`}
