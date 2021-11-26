@@ -1286,7 +1286,7 @@ await fetchJson(`https://api.lolhuman.xyz/api/ytaudio2?apikey=LolHumanzzh&url=ht
 .then(async(result) => {
 result = result.result
 caption = `❖ Title    : *${result.title}*\n`
-caption += `❖ Size     : *${result.size}*`
+caption += `❖ Size     : *${result.size}*\n\n_Lagu akan dikirimkan dalam 2 menit_`
 ini_buffer = await getBuffer(result.thumbnail)
 await dha.sendMessage(from, ini_buffer, image, { quoted: mek, caption: caption })
 get_audio = await getBuffer(result.link)
