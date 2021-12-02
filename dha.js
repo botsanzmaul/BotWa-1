@@ -3647,7 +3647,7 @@ break
               textImg(`${runtime(process.uptime())}`)
               break
        case 'youtube': 
-              reply(`Jangan Lupa Subscribe YT Owner:\n https://youtube.com/PINOMODZ`)
+              reply(`Jangan Lupa Subscribe YT Owner, tapi blom ada wkwk`)
               break
        case 'masukandata':
              reply(`*「YANZ STORE」*
