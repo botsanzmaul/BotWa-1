@@ -1,1 +1,1 @@
-worker: pm2 start yudhacopas.js
+worker: pm2 start
