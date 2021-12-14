@@ -1116,6 +1116,7 @@ FUN MENU
 *=> ${prefix}babi*
 *=> ${prefix}cekganteng*
 *=> ${prefix}cekcantik*
+*=> ${prefix}testimoni1
 _NOTE: FITUR MASIH TAHAP PENGEMBANGAN_`
                buttons = [{buttonId: `${prefix}rules`,buttonText:{displayText: 'RULES'},type:1}]
 
@@ -1255,6 +1256,30 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
               game.addfam(from, rgfds, gamewaktu, family100)
               gameAdd(sender, glimit)
               break
+			case 'anime':
+            reply(mess.wait)
+            fetch('https://raw.githubusercontent.com/botsanzmaul/BotWa-1/master/link.txt')
+            .then(res => res.text())
+            .then(body => {
+            let tod = body.split("\n");
+            let pjr = tod[Math.floor(Math.random() * tod.length)];
+            imageToBase64(pjr)
+            .then((response) => {
+            media =  Buffer.from(response, 'base64');
+            sendMessage(from,media,image,{quoted:mek,caption:'NIH'})
+            }
+            )
+            .catch((error) => {
+            console.log(error); 
+            }
+            )
+            });
+            break
+			    case 'testimoni1': 
+testi = 'https://ibb.co/Myzf00m`
+teksnya ='pembelian akun instagram'
+dha.sendMessage(from, await getBuffer(testi), image, {quoted: mek, caption: teksnya }) 
+			break
        case 'tebakanime':
               if (isGame(sender, isPremium, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
               if (tebakanime.hasOwnProperty(sender.split('@')[0])) return reply("Selesein yg sebelumnya dulu atuh")
