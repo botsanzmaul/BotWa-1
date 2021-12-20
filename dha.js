@@ -1276,7 +1276,7 @@ Ket : Ketik /resetgame , Untuk Mereset Permainan Yg Ada Di Grup!`, text, {contex
             });
             break
 			    case 'testimoni1': 
-testi = 'https://ibb.co/Myzf00m`
+testi = 'https://i.ibb.co/nnwkBr7/20211128-193648.jpg`
 teksnya ='pembelian akun instagram'
 dha.sendMessage(from, await getBuffer(testi), image, {quoted: mek, caption: teksnya }) 
 			break
